@@ -1,4 +1,4 @@
-import * as S from './Navbar.styled';
+import * as S from './Navbar.style';
 
 const Navbar = () => {
   return <S.NavWrapper>Navbar</S.NavWrapper>;

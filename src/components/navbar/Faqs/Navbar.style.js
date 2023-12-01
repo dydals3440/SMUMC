@@ -1,12 +1,15 @@
 import styled from 'styled-components';
-import theme from '../../theme';
-import { FONT_SIZE } from '../../constants/size';
+import theme from '../../../theme';
+import { FONT_SIZE } from '../../../constants/size';
+import { FONT } from '../../../constants/font';
 
-const NavWrapper = styled.div`
+const NavWrapper = styled.nav`
   width: 100%;
-  background-color: ${theme.MAIN_COLOR.CONTENT_BACKGROUND};
-  color: ${theme.COLOR.DARK.VULCAN};
-  font-size: ${FONT_SIZE.SEVEN_XL};
+  background-color: ${theme.MAIN_COLOR.TITLE};
+  color: ${theme.COLOR.PRIMARY.BLUE};
+  font-size: ${FONT_SIZE.SIX_XL};
+
+  font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
   ${theme.ALIGN.ROW_CENTER};
   // 정렬 사용방법 (ROW_CENTER, COLUMN_CENTER)
 

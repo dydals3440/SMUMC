@@ -1,18 +1,38 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import { Home, ErrorPage } from './pages';
-import AppLayout from './pages/AppLayout';
+import { HomePage, ErrorPage, FaqPage } from './pages';
+import { FaqLayout, MainLayout } from './pages/layout';
 import { BROWSER_PATH } from './constants/path';
 
 const router = createBrowserRouter([
   {
+    // 경로: '/'
     path: `${BROWSER_PATH.BASE}`,
-    element: <AppLayout />,
+    element: <MainLayout />,
     errorElement: <ErrorPage />,
+    // 세부 경로들은 children에 적으면 됩니다.
     children: [
       {
         index: true,
-        element: <Home />
+        element: <HomePage />
+      }
+    ]
+  },
+  // 경로: '/faqs'
+  {
+    path: `${BROWSER_PATH.FAQS.BASE}`,
+    element: <FaqLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        // /faq
+        index: true,
+        element: <FaqPage />
+      },
+      {
+        // /faq/1~무제한
+        path: ':id',
+        element: <FaqPage />
       }
     ]
   }

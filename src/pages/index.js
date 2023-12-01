@@ -1,5 +1,6 @@
-import AppLayout from './AppLayout';
-import Home from './home/Home';
+import AppLayout from './layout/MainLayout';
+import HomePage from './home/Home';
 import ErrorPage from './error/ErrorPage';
+import FaqPage from './faq/Faq';
 
-export { AppLayout, Home, ErrorPage };
+export { AppLayout, HomePage, ErrorPage, FaqPage };
