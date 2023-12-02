@@ -4,6 +4,7 @@ import { FONT_SIZE } from '../../../constants/size';
 
 const NavWrapper = styled.nav`
   width: 100%;
+  position: fixed;
   background-color: ${theme.MAIN_COLOR.CONTENT_BACKGROUND};
   color: ${theme.COLOR.DARK.VULCAN};
   font-size: ${FONT_SIZE.SEVEN_XL};
