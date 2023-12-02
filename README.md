@@ -1,24 +1,24 @@
-# SMU-TAXI
+# SMUMC
 
-# 🚖 SMUTAXI 프로젝트
+# 💻 SMUMC 소개 페이지
 
-실제 쇼핑 관련 사이트의 기능들을 구현하고자 노력한 프로젝트입니다.
+상명대학교 UMC 동아리 소개 페이지입니다.
 
 ---
 
-## 🚖 SMUTAXI 앱 실행 방법
+## 💻 SMUMC 소개 페이지 실행 방법
 
 ### 실행 방법
 
-`yarn dev`를 통해 프로젝트를 시작할 수 있습니다.
+`yarn dev`를 통해 홈페이지를 시작할 수 있습니다.
 
-### 🚖 SMUTAXI 사용해보기
+### 💻 SMUMC 소개 페이지 사용해보기
 
 아래의 링크에서 실제 작동되는 App을 확인할 수 있습니다.
 
 <!-- 추후 배포 링크 추가 예정입니다. -->
 
-[🚖 SMUTAXI 사용해보기](netlify 링크)
+[💻 SMUMC 소개 페이지 사용해보기](netlify 링크)
 
 ---
 
@@ -73,6 +73,27 @@
  ┃ ┃ ┣ 📜FaqLayout.jsx
  ┃ ┃ ┣ 📜MainLayout.jsx
  ┃ ┃ ┗ 📜index.js
+ ┃ ┣ 📂members
+ ┃ ┃ ┣ 📂membersActive
+ ┃ ┃ ┃ ┣ 📜MembersActive.jsx
+ ┃ ┃ ┃ ┗ 📜MembersActive.style.js
+ ┃ ┃ ┣ 📂membersAll
+ ┃ ┃ ┃ ┣ 📜MembersAll.jsx
+ ┃ ┃ ┃ ┗ 📜MembersAll.style.js
+ ┃ ┃ ┣ 📂membersDetail
+ ┃ ┃ ┃ ┣ 📜MembersDetail.jsx
+ ┃ ┃ ┃ ┗ 📜MembersDetail.style.js
+ ┃ ┃ ┣ 📜Members.jsx
+ ┃ ┃ ┗ 📜Members.style.js
+ ┃ ┣ 📂notices
+ ┃ ┃ ┣ 📜Notices.jsx
+ ┃ ┃ ┗ 📜Notices.style.js
+ ┃ ┣ 📂projects
+ ┃ ┃ ┣ 📂projectsDetail
+ ┃ ┃ ┃ ┣ 📜ProjectsDetail.jsx
+ ┃ ┃ ┃ ┗ 📜ProjectsDetail.style.js
+ ┃ ┃ ┣ 📜Projects.jsx
+ ┃ ┃ ┗ 📜Projects.style.js
  ┃ ┣ 📜.DS_Store
  ┃ ┗ 📜index.js
  ┣ 📂redux
@@ -88,6 +109,7 @@
  ┣ 📜index.css
  ┣ 📜main.jsx
  ┗ 📜theme.jsx
+
 ```
 
 ---
@@ -111,9 +133,9 @@
 
 ---
 
-### 🚖 SMUTAXIl 앱 핵심 기능
+### 💻 SMUMC 홈페이지 소개
 
-예시
+예시 (추후 수정 예정)
 
 - [ ] `Products` 클릭 시, 전체 상품 보기 기능
 - [ ] `결제하기` 클릭 or 링크로 이동시 로그인 하지 않은 사용자는 Home으로, 로그인 한 사용자는 장바구니 기능 이용 가능! `protectedRoute` 구현, 실제로 로그인하지 않았으면 UI상으로 볼 수 없게 구현
@@ -131,13 +153,13 @@
 
 ---
 
-### 🚖 SMUTAXI 기능 실행 영상!
+### 💻 SMUMC 기능 실행 영상!
 
 ---
 
 ### Trouble Shooting 🛠️
 
-`🚖 SMUTAXI` 프로젝트를 진행하면서 발생한 `버그 수정`, `문제 해결`, 기능 구현시 `어려웠던 점 정리`, `성능 개선`, `작업 효율 향상` 들에 관해 정리한 기록입니다.
+`💻 SMUMC` 프로젝트를 진행하면서 발생한 `버그 수정`, `문제 해결`, 기능 구현시 `어려웠던 점 정리`, `성능 개선`, `작업 효율 향상` 들에 관해 팀원들과 정리한 기록입니다.
 
 [프로젝트를 진행시 배운점들 정리](주소)
 
