@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import modalReducer from '../slices/modalSlice';
+import sidebarReducer from '../slices/sidebarSlice';
 
 export const store = configureStore({
-  reducer: { modal: modalReducer },
+  reducer: { sidebar: sidebarReducer }
 });
