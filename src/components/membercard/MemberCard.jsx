@@ -63,7 +63,7 @@ const MemberCard = ({
     >
       <S.ImageWrapper imgwidth={imgwidth} imgheight={imgheight} radius={radius}>
         <img src={imgurl} alt='umc 멤버들 사진입니다.' />
-        {badge && <span>{badge}</span>}
+        {size === 'm' && badge && <span>{badge}</span>}
       </S.ImageWrapper>
       <S.NameText namefontsize={namefontsize} namefontweight={namefontweight}>
         {name}
