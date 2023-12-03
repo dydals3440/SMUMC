@@ -11,45 +11,42 @@ const Button = ({
   children,
   fontcolor,
   onclick,
+  width,
+  height,
   radius,
   border
 }) => {
   const sizeHandler = size => {
     switch (size) {
-      case 'm':
-        return { width: 'auto', height: '40px' };
-      case 's':
-        return { width: 'auto', height: '38px' };
-      case 'xs':
-        return { width: 'auto', height: '37px' };
-      default:
-        throw new Error(`지원되지 않는 ${size}의 버튼입니다.`);
-    }
-  };
-  const fontHandler = font => {
-    switch (font) {
       case 'l':
         return {
+          fixwidth: '290px',
+          fixheight: '70px',
+          fixpadding: '24px 32px',
           fontsize: `${FONT_SIZE.XL}`,
           fontweight: `${FONT_WEIGHT.BOLD}`
         };
       case 'm':
         return {
+          fixwidth: '180px',
+          fixheight: '50px',
+          fixpadding: '24px 25px',
           fontsize: `${FONT_SIZE.BASE}`,
           fontweight: `${FONT_WEIGHT.BOLD}`
         };
       case 's':
         return {
+          fixwidth: '70px',
+          fixheight: '40px',
+          fixpadding: '10px 22px',
           fontsize: `${FONT_SIZE.XS}`,
           fontweight: `${FONT_WEIGHT.NORMAL}`
         };
-      default:
-        throw new Error(`지원되지 않는 ${size}의 버튼입니다.`);
     }
   };
 
-  const { width, height } = sizeHandler(size);
-  const { fontsize, fontweight } = fontHandler(font);
+  const { fixwidth, fixheight, fixpadding, fontsize, fontweight } =
+    sizeHandler(size);
 
   return (
     <S.StyledButton
@@ -65,8 +62,11 @@ const Button = ({
       onClick={onclick}
       radius={radius}
       border={border}
+      fixwidth={fixwidth}
+      fixheight={fixheight}
+      fixpadding={fixpadding}
     >
-      {children}
+      <p>{children}</p>
     </S.StyledButton>
   );
 };

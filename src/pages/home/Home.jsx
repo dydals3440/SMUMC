@@ -1,5 +1,11 @@
+import Button from '../../components/button/Button';
+
 const Home = () => {
-  return <div>홈페이지다.</div>;
+  return (
+    <div>
+      <Button size='s'>하이</Button>
+    </div>
+  );
 };
 
 export default Home;
