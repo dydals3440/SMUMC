@@ -16,17 +16,6 @@ const Navbar = () => {
   };
 
   return (
-    <S.NavWrapper isShow={y < 100 ? true : false}>
-      <S.LinkHome to={BROWSER_PATH.BASE}>SMUMC</S.LinkHome>
-      <S.NavMenuWrapper>
-        <S.LinkMenu to={BROWSER_PATH.PROJECTS.BASE}>PROJECTS</S.LinkMenu>
-        <S.LinkMenu to={BROWSER_PATH.MEMBERS.BASE}>MEMBERS</S.LinkMenu>
-        <S.LinkMenu to={BROWSER_PATH.NOTICES.BASE}>NOTICES</S.LinkMenu>
-      </S.NavMenuWrapper>
-      <S.BurgerMenuWrapper>
-        <SvgIcon component={MenuIcon} onClick={handleSidebar} />
-      </S.BurgerMenuWrapper>
-    </S.NavWrapper>
   );
 };
 
