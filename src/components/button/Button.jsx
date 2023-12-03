@@ -3,7 +3,6 @@ import { FONT_SIZE, FONT_WEIGHT } from '../../constants/size';
 
 const Button = ({
   size,
-  font,
   disabled,
   margin,
   padding,
