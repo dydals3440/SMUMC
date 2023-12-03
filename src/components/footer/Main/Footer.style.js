@@ -4,8 +4,6 @@ import { FONT_SIZE } from '../../../constants/size';
 import SvgIcon from '@mui/material/SvgIcon';
 
 const FooterWrapper = styled.footer`
-  position: fixed;
-  bottom: 0;
   width: 100%;
   height: 150px;
   padding: 0 80px;
