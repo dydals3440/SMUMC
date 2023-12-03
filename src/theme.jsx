@@ -17,7 +17,7 @@ const WINDOW_SIZE = {
 const ALIGN = {
   ROW_CENTER: `
     display: flex;
-    justify-contents: center;
+    justify-content: center;
     align-items: center
     `,
   COLUMN_CENTER: `
