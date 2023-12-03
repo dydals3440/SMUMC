@@ -20,7 +20,7 @@ const Navbar = () => {
       <S.LinkHome to={BROWSER_PATH.BASE}>SMUMC</S.LinkHome>
       <S.NavMenuWrapper>
         <S.LinkMenu to={BROWSER_PATH.PROJECTS.BASE}>PROJECTS</S.LinkMenu>
-        <S.LinkMenu to={BROWSER_PATH.MEMBERS.BASE}>MEMBERS</S.LinkMenu>
+        <S.LinkMenu to={BROWSER_PATH.MEMBERS.ACTIVE}>MEMBERS</S.LinkMenu>
         <S.LinkMenu to={BROWSER_PATH.NOTICES.BASE}>NOTICES</S.LinkMenu>
       </S.NavMenuWrapper>
       <S.BurgerMenuWrapper>

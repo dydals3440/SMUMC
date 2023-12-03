@@ -1,4 +1,4 @@
 import MainLayout from './MainLayout';
-import FaqLayout from './FaqLayout';
+import MembersLayout from './MembersLayout';
 
-export { MainLayout, FaqLayout };
+export { MainLayout, MembersLayout };

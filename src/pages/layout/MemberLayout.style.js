@@ -3,11 +3,6 @@ import theme from "../../../theme";
 import { FONT_SIZE } from "../../../constants/size";
 import { FONT } from "../../../constants/font";
 
-const Container = styled.div`
-    ${theme.ALIGN.COLUMN_CENTER};
-    margin-top: 100px;
-`;
-
 const ImgBanner = styled.img`
     display: flex;
     width: 100%;
@@ -31,12 +26,4 @@ const TabButton = styled.button`
     background-color: transparent;
 `;
 
-const MemberContainer = styled.div`
-    ${theme.ALIGN.ROW_CENTER};
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 30px 0px;
-    border-bottom: 1px solid ${theme.COLOR.DARK.VULCAN};
-`;
-
-export { Container, ImgBanner, TabContainer, MemberContainer, TabButton };
+export { ImgBanner, TabContainer, TabButton };
