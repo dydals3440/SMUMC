@@ -72,7 +72,7 @@
  ┃ ┣ 📂layout
  ┃ ┃ ┣ 📜FaqLayout.jsx
  ┃ ┃ ┣ 📜MainLayout.jsx
- ┃ ┃ ┗ 📜index.js
+ ┃ ┃ ┗ 📜index.js=
  ┃ ┣ 📂members
  ┃ ┃ ┣ 📂membersActive
  ┃ ┃ ┃ ┣ 📜MembersActive.jsx
