@@ -45,7 +45,8 @@ const COLOR = {
     WHITE: '#ffffff',
     WHITE_GRAY: '#f6f6f7',
     YELLOW: '#ffca3d'
-  }
+  },
+  TRANSPARENT: 'transparent'
 };
 
 const MAIN_COLOR = {
