@@ -1,3 +1,5 @@
+import ActivityIntro from '../../components/activityIntro/activityIntro';
+
 const Home = () => {
   return (
     <div style={{ backgroundColor: 'lightGray' }}>
@@ -174,6 +176,7 @@ const Home = () => {
         eligendi. Ducimus excepturi, itaque sapiente eius quas rem laborum
         labore, consequatur dolorem nulla ad officiis eaque quidem?
       </h3>
+      <ActivityIntro />
     </div>
   );
 };
