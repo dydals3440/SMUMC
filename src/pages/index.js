@@ -2,7 +2,7 @@ import AppLayout from './layout/MainLayout';
 import HomePage from './home/Home';
 import ErrorPage from './error/ErrorPage';
 import FaqPage from './faq/Faq';
-import ProjectsPage from './projects/projects';
+import ProjectsPage from './projects/Projects';
 import MembersPage from './members/Members';
 import MembersDetailPage from './members/membersDetail/MembersDetail';
 import MembersActivePage from './members/membersActive/MembersActive';

@@ -40,4 +40,10 @@ const Icon = styled(SvgIcon)`
 
 const SocialBox = styled.div``;
 
-export { FooterWrapper, InfoBox, Icon, DetailInfo, SocialBox };
+const LinkBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+`;
+
+export { FooterWrapper, InfoBox, Icon, DetailInfo, SocialBox, LinkBox };
