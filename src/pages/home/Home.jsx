@@ -1,4 +1,3 @@
-
 import * as S from '../home/Home.styled';
 import HeroBox from '../../components/homepage/HeroBox/HeroBox';
 import IntroduceBox from '../../components/homepage/IntroduceBox/IntroduceBox';
@@ -23,7 +22,10 @@ const Home = () => {
         title='ACITIVITY'
         text='University MakeUs Challenge(UMC-SMU)는 상명대학교 대학교 동아리
         입니다.'
-      ></IntroduceBox>
+      >
+        {' '}
+        <ActivityIntro />
+      </IntroduceBox>
       <IntroduceBox
         title='SPONSED BY'
         text='University MakeUs Challenge(UMC-SMU)는 상명대학교 대학교 동아리
@@ -39,7 +41,6 @@ const Home = () => {
         text='University MakeUs Challenge(UMC-SMU)는 상명대학교 대학교 동아리
       입니다.'
       ></IntroduceBox>
-          <ActivityIntro />
     </S.Container>
   );
 };
