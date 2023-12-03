@@ -22,17 +22,6 @@ const NavWrapper = styled.nav`
 
   transition-timing-function: ease-in;
   transition: all 0.5s;
-
-  // 정렬 사용방법 (ROW_CENTER, COLUMN_CENTER)
-  /* 태블릿 반응형 사용법 */
-  @media ${theme.WINDOW_SIZE.TABLET} {
-    background-color: ${theme.COLOR.LIGHT.YELLOW};
-  }
-
-  /* 모바일 반응형 사용법 */
-  @media ${theme.WINDOW_SIZE.MOBILE} {
-    background-color: ${theme.COLOR.PRIMARY.BLUE};
-  }
 `;
 
 const LinkHome = styled(Link)`
