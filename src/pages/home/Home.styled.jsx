@@ -20,7 +20,7 @@ const Container = styled.div`
       font-weight: ${FONT_WEIGHT.FONT_BLACK};
     }
     p {
-      font-size: ${FONT_SIZE.BASE};
+      font-size: ${FONT_SIZE.SM};
     }
   }
 `;

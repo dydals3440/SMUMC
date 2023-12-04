@@ -5,6 +5,7 @@ import EmogeBox from '../../components/homepage/EmogeBox/EmogeBox';
 import ActivityIntro from '../../components/activityIntro/ActivityIntro';
 import { CountUpCard } from '../../components/countupCard/CountUpCard';
 import { SliderCard } from '../../components/sliderCard/SliderCard';
+
 const Home = () => {
   return (
     <S.Container>
