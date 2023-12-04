@@ -5,11 +5,9 @@ import {
   EmojiBox,
   IntroduceBox,
   HeroBox,
-  ActivityIntro
+  ActivityIntro,
+  InfiniteSlider
 } from '../../components';
-import InfiniteSlider from '../../uis/infititeSlider/InfiniteSlider';
-
-import { members } from '../../utils/members';
 
 const Home = () => {
   return (
@@ -34,13 +32,7 @@ const Home = () => {
           University MakeUs Challenge(UMC-SMU)는 상명대학교 대학교 동아리
           입니다.
         </p>
-        <S.SliderWrapper>
-          <InfiniteSlider
-            cardWidth={'200px'}
-            cardHeight={'200px'}
-            dataList={members}
-          />
-        </S.SliderWrapper>
+        <InfiniteSlider />
       </IntroduceBox>
       <IntroduceBox>
         <h1>ACTIVITY</h1>

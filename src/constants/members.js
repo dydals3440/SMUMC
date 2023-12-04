@@ -1,4 +1,4 @@
-const members = [
+const MEMBERS = [
   {
     id: 1,
     year: 4,
@@ -496,4 +496,4 @@ const members = [
   }
 ];
 
-export { members };
+export { MEMBERS };
