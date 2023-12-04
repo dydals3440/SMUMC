@@ -40,7 +40,8 @@ const COLOR = {
     NAVY: '#232731',
     GRAY: '#2f2f2f',
     VULCAN: '#10121d',
-    LIGHT_GRAY: '#74757b'
+    LIGHT_GRAY: '#74757b',
+    LIGHT_LIGHT_GRAY: '#E6E6E6'
   },
   LIGHT: {
     WHITE: '#ffffff',

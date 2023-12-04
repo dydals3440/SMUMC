@@ -3,5 +3,6 @@ import Footer from './footer/Main/Footer';
 import FaqNavbar from './navbar/Faqs/Navbar';
 import FaqFooter from './footer/Faq/Footer';
 import Sidebar from './sidebar/Sidebar';
+import Calendar from './calendar/Calendar';
 
-export { Navbar, Footer, FaqNavbar, FaqFooter, Sidebar };
+export { Navbar, Footer, FaqNavbar, FaqFooter, Sidebar, Calendar };
