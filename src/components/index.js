@@ -10,6 +10,7 @@ import IntroduceBox from './homepage/IntroduceBox/IntroduceBox';
 import EmojiBox from './homepage/EmojiBox/EmojiBox';
 import Calendar from './calendar/Calendar';
 import InfiniteSlider from '../uis/infititeSlider/InfiniteSlider';
+import Accordion from './accordion/Accordion';
 
 export {
   Navbar,
@@ -22,5 +23,6 @@ export {
   EmojiBox,
   ActivityIntro,
   Calendar,
-  InfiniteSlider
+  InfiniteSlider,
+  Accordion
 };

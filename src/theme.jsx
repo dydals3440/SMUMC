@@ -41,12 +41,15 @@ const COLOR = {
     GRAY: '#2f2f2f',
     VULCAN: '#10121d',
     LIGHT_GRAY: '#74757b',
-    LIGHT_LIGHT_GRAY: '#E6E6E6'
+    LIGHT_LIGHT_GRAY: '#E6E6E6',
+    BROWN: '#85662b',
+    BEIGE_BROWN: '#8b7f75'
   },
   LIGHT: {
     WHITE: '#ffffff',
     WHITE_GRAY: '#f6f6f7',
-    YELLOW: '#ffca3d'
+    YELLOW: '#ffca3d',
+    BEIGE: '#f0ebe1'
   },
   TRANSPARENT: 'transparent'
 };
