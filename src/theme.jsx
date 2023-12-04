@@ -39,7 +39,8 @@ const COLOR = {
     BLACK: '#000000',
     NAVY: '#232731',
     GRAY: '#2f2f2f',
-    VULCAN: '#10121d'
+    VULCAN: '#10121d',
+    LIGHT_GRAY: '#74757b'
   },
   LIGHT: {
     WHITE: '#ffffff',
