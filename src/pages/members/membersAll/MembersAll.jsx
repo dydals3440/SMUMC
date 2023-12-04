@@ -1,15 +1,17 @@
 import { useState } from 'react';
-import * as S from './MembersAll.style';
+import { useNavigate } from 'react-router-dom';
+
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
-import { members } from '../../../utils/members';
+import Pagination from '@mui/material/Pagination';
+
+import * as S from './MembersAll.style';
 import MemberCard from '../../../components/membercard/MemberCard';
+import { MEMBERS } from '../../../constants/members';
+import { BROWSER_PATH } from '../../../constants/path';
 import defaultWomanUrl from '../../../assets/img/defaultWoman.webp';
 import defaultManUrl from '../../../assets/img/defaultMan.webp';
-import Pagination from '@mui/material/Pagination';
-import { BROWSER_PATH } from '../../../constants/path';
-import { useNavigate } from 'react-router-dom';
 
 const MembersAll = () => {
   const [year, setYear] = useState(0);
@@ -27,7 +29,7 @@ const MembersAll = () => {
   };
 
   const filteredMembers =
-    year === 0 ? members : members.filter(item => item.year === year);
+    year === 0 ? MEMBERS : MEMBERS.filter(item => item.year === year);
   const startIndex = (page - 1) * membersPerPage;
   const endIndex = startIndex + membersPerPage;
   const displayedMembers = filteredMembers.slice(startIndex, endIndex);
@@ -50,16 +52,16 @@ const MembersAll = () => {
         </Select>
       </S.FormControlStyle>
       <S.MemberContainer>
-        {displayedMembers.map((item, index) => (
+        {displayedMembers.map(({ name, year, part, sex, id }) => (
           <MemberCard
-            key={index}
+            key={id}
             size='l'
-            name={item.name}
-            th={item.year}
-            department={item.part}
-            imgurl={item.sex === 'w' ? defaultWomanUrl : defaultManUrl}
+            name={name}
+            th={year}
+            department={part}
+            imgurl={sex === 'w' ? defaultWomanUrl : defaultManUrl}
             onClick={() => {
-              navigate(`${BROWSER_PATH.MEMBERS.BASE}/${item.id}`);
+              navigate(`${BROWSER_PATH.MEMBERS.BASE}/${id}`);
             }}
           />
         ))}

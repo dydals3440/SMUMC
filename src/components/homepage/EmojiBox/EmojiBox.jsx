@@ -1,8 +1,8 @@
-import * as S from '../EmogeBox/EmogeBox.style';
+import * as S from './EmojiBox.style';
 
-const EmogeBox = () => {
+const EmojiBox = () => {
   return (
-    <S.EmogeBox>
+    <S.EmojiBox>
       <S.descriptionWrapper>
         <S.description>
           <span>🖥</span>
@@ -26,7 +26,7 @@ const EmogeBox = () => {
           <p>경험할 수 있습니다.</p>
         </S.description>
       </S.descriptionWrapper>
-    </S.EmogeBox>
+    </S.EmojiBox>
   );
 };
-export default EmogeBox;
+export default EmojiBox;
