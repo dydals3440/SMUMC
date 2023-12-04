@@ -8,7 +8,7 @@ const Container = styled.div`
   width: ${props => props.width};
   height: ${props => props.height};
   background: ${props => props.background};
-  border-radius: ${props => props.radius}px;
+  border-radius: ${props => props.radius || '10'}px;
   background: ${props => props.background};
   border: 2px solid black;
   font-weight: ${props => props.fontweight};

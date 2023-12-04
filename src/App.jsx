@@ -34,27 +34,7 @@ const router = createBrowserRouter([
         path: `${BROWSER_PATH.PROJECTS.DETAIL}`,
         element: <ProjectsDetailPage />
       },
-      // 필요하면쓰고, 아님 빼도 될꺼같습니다. (전체 멤버 페이지)
-      // {
-      //   path: `${BROWSER_PATH.MEMBERS.BASE}`,
-      //   element: <MembersPage />
-      // },
-      // 멤버 개인의 세부 페이지
-      // {
-      //   path: `${BROWSER_PATH.MEMBERS.DETAIL}`,
-      //   element: <MembersDetailPage />
-      // },
-      // 활동 회원 페이지
-      // {
-      //   path: `${BROWSER_PATH.MEMBERS.ACTIVE}`,
-      //   element: <MembersActivePage />
-      // },
-      // 구성원 목록 페이지
-      // {
-      //   path: `${BROWSER_PATH.MEMBERS.ALL}`,
-      //   element: <MembersAllPage />
-      // },
-      // 공지사항 페이지
+      // 경로 '/notices'
       {
         path: `${BROWSER_PATH.NOTICES.BASE}`,
         element: <NoticesPage />
