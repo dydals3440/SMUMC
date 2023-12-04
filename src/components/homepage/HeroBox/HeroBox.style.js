@@ -1,5 +1,10 @@
 import styled from 'styled-components';
-import { FONT_SIZE, FONT_WEIGHT } from '../../../constants/size';
+import {
+  FONT_SIZE,
+  FONT_WEIGHT,
+  RESPONSIVE_SIZE
+} from '../../../constants/size';
+import theme from '../../../theme';
 import background from '../../../assets/img/coding.webp';
 
 const Hero = styled.div`
@@ -21,6 +26,11 @@ const Wrapper = styled.div`
   z-index: 999;
   p {
     font-size: ${FONT_SIZE.BASE};
+  }
+  @media (max-width: ${RESPONSIVE_SIZE.PC}) {
+    width: 100%;
+    ${theme.ALIGN.COLUMN_CENTER}
+    font-size: ${FONT_SIZE.FIVE_XL};
   }
 `;
 export { Hero, Wrapper };

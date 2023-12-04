@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 import theme from '../../../theme';
+import {
+  FONT_SIZE,
+  FONT_WEIGHT,
+  RESPONSIVE_SIZE
+} from '../../../constants/size';
 
 const IntroduceBox = styled.div`
   ${theme.ALIGN.COLUMN_CENTER};

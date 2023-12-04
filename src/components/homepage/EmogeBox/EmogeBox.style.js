@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { FONT_SIZE, FONT_WEIGHT } from '../../../constants/size';
+import {
+  FONT_SIZE,
+  FONT_WEIGHT,
+  RESPONSIVE_SIZE
+} from '../../../constants/size';
 import background from '../../../assets/img/library.webp';
 import theme from '../../../theme';
 
@@ -15,9 +19,16 @@ const EmogeBox = styled.div`
 `;
 
 const descriptionWrapper = styled.span`
-  gap: 100px;
-
   ${theme.ALIGN.ROW_CENTER};
+  gap: 70px;
+  @media (max-width: ${RESPONSIVE_SIZE.PC}) {
+    padding: 10%;
+    width: 100%;
+  }
+  @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
+    ${theme.ALIGN.COLUMN_CENTER};
+    gap: 10px;
+  }
 `;
 
 const description = styled.div`
@@ -32,8 +43,25 @@ const description = styled.div`
   }
 
   p {
-    font-size: ${FONT_SIZE.BASE};
+    font-size: ${FONT_SIZE.SM};
     font-weight: ${FONT_WEIGHT.NORMAL};
+    margin: 0;
+  }
+
+  @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
+    span {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-size: ${FONT_SIZE.LG};
+      font-weight: ${FONT_WEIGHT.BOLD};
+    }
+
+    p {
+      font-size: ${FONT_SIZE.SM};
+      font-weight: ${FONT_WEIGHT.NORMAL};
+    }
   }
 `;
 export { EmogeBox, descriptionWrapper, description };
