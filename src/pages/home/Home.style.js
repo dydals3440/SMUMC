@@ -6,6 +6,7 @@ import theme from '../../theme';
 const Container = styled.div`
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
   width: 100%;
+
   h1 {
     font-size: ${FONT_SIZE.SIX_XL};
     font-weight: ${FONT_WEIGHT.FONT_BLACK};
@@ -26,9 +27,26 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   gap: 40px;
-  ${theme.ALIGN.ROW_CENTER}
+  width: 100%;
+  padding: 10px;
+  ${theme.ALIGN.ROW_CENTER};
+
   @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
-    ${theme.ALIGN.COLUMN_CENTER}
+    width: 100%;
+    ${theme.ALIGN.COLUMN_CENTER};
+    font-size: 1rem;
+  }
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    width: 100%;
+    ${theme.ALIGN.COLUMN_CENTER};
+    font-size: 3rem;
   }
 `;
-export { Container, Wrapper };
+
+const SliderWrapper = styled.div`
+  overflow: hidden;
+  z-index: 50000;
+  position: fixed;
+`;
+export { Container, Wrapper, SliderWrapper };

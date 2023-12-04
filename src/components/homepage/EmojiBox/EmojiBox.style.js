@@ -7,7 +7,7 @@ import {
 import background from '../../../assets/img/library.webp';
 import theme from '../../../theme';
 
-const EmogeBox = styled.div`
+const EmojiBox = styled.div`
   background-image: url(${background});
   position: relative;
   height: 600px;
@@ -64,4 +64,4 @@ const description = styled.div`
     }
   }
 `;
-export { EmogeBox, descriptionWrapper, description };
+export { EmojiBox, descriptionWrapper, description };
