@@ -1,5 +1,5 @@
 import { ACTIVITY_INFOS } from '../../constants/info';
-import * as S from './ActivityIntro.style';
+import * as S from './activityIntro.style';
 
 function ActivityIntro() {
   return (
@@ -8,8 +8,8 @@ function ActivityIntro() {
         {ACTIVITY_INFOS.map(({ id, title, description, image }) => (
           <S.Contents key={id}>
             <S.TextBox>
-              <h1>{title}</h1>
-              <p>{description}</p>
+              <h2>{title}</h2>
+              <h3>{description}</h3>
             </S.TextBox>
             <S.Img src={image} alt={title} />
           </S.Contents>

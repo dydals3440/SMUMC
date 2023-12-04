@@ -9,6 +9,7 @@ import HeroBox from './homepage/HeroBox/HeroBox';
 import ActivityIntro from './activityIntro/activityIntro';
 import IntroduceBox from './homepage/IntroduceBox/IntroduceBox';
 import EmojiBox from './homepage/EmojiBox/EmojiBox';
+import Calendar from './calendar/Calendar';
 
 export {
   Navbar,
@@ -21,5 +22,7 @@ export {
   HeroBox,
   IntroduceBox,
   EmojiBox,
-  ActivityIntro
+  ActivityIntro,
+  Calendar
 };
+
