@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   height: 100%;
   width: 100%;
 
-  ${theme.ALIGN.ROW_CENTER}
+  ${theme.ALIGN.ROW_CENTER};
 `;
 
 const Accordions = styled.div`
@@ -19,6 +19,7 @@ const Item = styled.div`
   background-color: ${theme.COLOR.LIGHT.BEIGE};
   margin-bottom: 5px;
   padding: 30px 40px;
+  border-radius: 10px;
 `;
 
 const Title = styled.div`
