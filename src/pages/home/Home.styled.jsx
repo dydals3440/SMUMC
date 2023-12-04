@@ -27,5 +27,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   gap: 40px;
   ${theme.ALIGN.ROW_CENTER}
+  @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
+    ${theme.ALIGN.COLUMN_CENTER}
+  }
 `;
 export { Container, Wrapper };
