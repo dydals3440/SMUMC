@@ -1,11 +1,11 @@
 import { useDispatch } from 'react-redux';
 import SvgIcon from '@mui/material/SvgIcon';
 import MenuIcon from '@mui/icons-material/Menu';
-
 import * as S from './Navbar.style';
 import { sidebarOpen } from '../../../redux/slices/sidebarSlice';
 import { useScroll } from '../../../hooks/useScroll';
 import { BROWSER_PATH } from '../../../constants/path';
+import { clickMemberActive } from '../../../redux/slices/memberTabSlice';
 
 const Navbar = () => {
   const { y } = useScroll();
@@ -20,7 +20,14 @@ const Navbar = () => {
       <S.LinkHome to={BROWSER_PATH.BASE}>SMUMC</S.LinkHome>
       <S.NavMenuWrapper>
         <S.LinkMenu to={BROWSER_PATH.PROJECTS.BASE}>PROJECTS</S.LinkMenu>
-        <S.LinkMenu to={BROWSER_PATH.MEMBERS.ACTIVE}>MEMBERS</S.LinkMenu>
+        <S.LinkMenu
+          to={BROWSER_PATH.MEMBERS.ACTIVE}
+          onClick={() => {
+            dispatch(clickMemberActive());
+          }}
+        >
+          MEMBERS
+        </S.LinkMenu>
         <S.LinkMenu to={BROWSER_PATH.NOTICES.BASE}>NOTICES</S.LinkMenu>
       </S.NavMenuWrapper>
       <S.BurgerMenuWrapper>
