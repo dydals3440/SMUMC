@@ -12,7 +12,7 @@ const Container = styled.div`
   }
 
   p {
-    font-size: ${FONT_SIZE.XL};
+    font-size: ${FONT_SIZE.LG};
   }
   @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
     h1 {
