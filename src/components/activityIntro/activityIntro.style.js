@@ -1,44 +1,52 @@
 import styled from 'styled-components';
+import theme from '../../theme';
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  width: 100%;
+  ${theme.ALIGN.COLUMN_CENTER};
 `;
 
 const ContentBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  //   justify-content: space-around;
-  gap: 30px;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.4);
-  width: 900px;
-  height: 300px;
-  position: relative;
+  ${theme.ALIGN.COLUMN_CENTER};
+  gap: 50px;
+  background-color: ${theme.COLOR.DARK.BLACK};
+  width: 100%;
+  padding: 10px;
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
 `;
 
 const Contents = styled.div`
-  padding: 50px;
-  //   background-color: rgba(255, 255, 255, 0.7);
-  z-index: 1;
+  ${theme.ALIGN.ROW_CENTER}
+  position: relative;
+  width: 1000px;
+  height: 200px;
+  border-radius: 30px;
+  background-color: ${theme.COLOR.DARK.GRAY};
+
+  h1,
+  p {
+    top: 100px;
+    color: ${theme.COLOR.LIGHT.WHITE_GRAY};
+  }
+`;
+
+const TextBox = styled.div`
+  margin: auto;
   width: 500px;
-  height: 300px;
 `;
 
 const Img = styled.img`
   border-radius: 0px 30px 30px 0px;
-  width: 400px;
-  height: 300px;
+
+  width: 40%;
+  height: 100%;
   object-fit: cover;
-  position: absolute;
-  right: 150px;
-  z-index: 0;
-  top: 0;
-  right: 0;
 `;
 
-export { Container, ContentBox, Contents, Img };
+export { Container, ContentBox, Contents, TextBox, Img };
