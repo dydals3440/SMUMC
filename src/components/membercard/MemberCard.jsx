@@ -9,7 +9,8 @@ const MemberCard = ({
   name,
   th,
   department,
-  badge
+  badge,
+  onClick
 }) => {
   const sizeHandler = size => {
     switch (size) {
@@ -60,6 +61,7 @@ const MemberCard = ({
       width={width}
       radius={radius}
       fontweight={fontweight}
+      onClick={onClick}
     >
       <S.ImageWrapper imgwidth={imgwidth} imgheight={imgheight} radius={radius}>
         <img src={imgurl} alt='umc 멤버들 사진입니다.' />
