@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import theme from '../../../theme';
 import { FONT_SIZE } from '../../../constants/size';
 import SvgIcon from '@mui/material/SvgIcon';
+import { FONT } from '../../../constants/font';
 
 const FooterWrapper = styled.footer`
   width: 100%;
   height: 150px;
   padding: 0 80px;
-
+  font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
   background-color: ${theme.COLOR.DARK.GRAY};
 
   ${theme.ALIGN.ROW_CENTER};

@@ -2,8 +2,11 @@ import styled from 'styled-components';
 import theme from '../../../theme';
 import { FONT_SIZE, FONT_WEIGHT } from '../../../constants/size';
 import { Link, NavLink } from 'react-router-dom';
+import { FONT } from '../../../constants/font';
 
 const NavWrapper = styled.nav`
+  font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
+
   position: fixed;
   top: 0;
   width: 100%;
