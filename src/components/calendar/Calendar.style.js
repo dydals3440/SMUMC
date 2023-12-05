@@ -4,7 +4,7 @@ import { FONT_SIZE } from '../../constants/size';
 import { FONT } from '../../constants/font';
 
 const Wrapper = styled.div`
-  background-color: ${theme.COLOR.DARK.LIGHT_LIGHT_GRAY};
+  background-color: ${theme.COLOR.DARK.NAVY};
   border-radius: 20px;
   width: 80%;
   height: 100vh;
@@ -20,7 +20,7 @@ const CalendarHead = styled.span`
   justify-content: space-around;
   font-size: 55px;
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
-  color: ${theme.COLOR.DARK.NAVY};
+  color: ${theme.COLOR.LIGHT.WHITE};
 
   margin-bottom: 20px;
 
@@ -60,14 +60,17 @@ const CalendarBody = styled.div`
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(${({ fourCol }) => (fourCol ? 5 : 6)}, 1fr);
   font-family: ${FONT.IBM_PLEX_SANS_KR.SEMI_BOLD};
+  color: ${theme.COLOR.LIGHT.WHITE};
+  border: 1px solid white;
 `;
 
 const StyleDay = styled.span`
-  border: 2px solid;
+  border: 0.8px solid;
   text-align: right;
   padding: 10px;
   ${({ active }) =>
     active && `background: ${theme.COLOR.PRIMARY.BLUE_SECONDARY}`}
+  color: ${theme.COLOR.LIGHT.WHITE};
 `;
 
 const StyledEvent = styled.span`
