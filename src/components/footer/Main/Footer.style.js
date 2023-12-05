@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import theme from '../../../theme';
-import { FONT_SIZE } from '../../../constants/size';
+import { FONT_SIZE, RESPONSIVE_SIZE } from '../../../constants/size';
 import SvgIcon from '@mui/material/SvgIcon';
 import { FONT } from '../../../constants/font';
 
@@ -16,6 +16,10 @@ const FooterWrapper = styled.footer`
 
   color: ${theme.COLOR.LIGHT.WHITE_GRAY};
   font-size: ${FONT_SIZE.FOUR_XL};
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    ${theme.ALIGN.COLUMN_CENTER}
+  }
 `;
 
 const InfoBox = styled.ul`

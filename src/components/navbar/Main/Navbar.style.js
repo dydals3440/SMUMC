@@ -9,7 +9,7 @@ const NavWrapper = styled.nav`
 
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 100px;
   padding: 20px;
   z-index: 1;

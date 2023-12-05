@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import theme from '../../theme';
 import { FONT } from '../../constants/font';
-import { FONT_SIZE } from '../../constants/size';
+import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 
 const Wrapper = styled.div`
   margin: 40px 0;
@@ -9,6 +9,10 @@ const Wrapper = styled.div`
   width: 100%;
 
   ${theme.ALIGN.ROW_CENTER};
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    padding: 20px;
+  }
 `;
 
 const Accordions = styled.div`

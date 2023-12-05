@@ -23,7 +23,7 @@ const Sidebar = () => {
         <S.LinkMenu to={BROWSER_PATH.PROJECTS.BASE} onClick={handleSidebar}>
           PROJECTS
         </S.LinkMenu>
-        <S.LinkMenu to={BROWSER_PATH.MEMBERS.BASE} onClick={handleSidebar}>
+        <S.LinkMenu to={BROWSER_PATH.MEMBERS.ACTIVE} onClick={handleSidebar}>
           MEMBERS
         </S.LinkMenu>
         <S.LinkMenu to={BROWSER_PATH.NOTICES.BASE} onClick={handleSidebar}>

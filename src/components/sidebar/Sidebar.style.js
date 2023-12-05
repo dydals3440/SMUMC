@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   height: 100%;
   z-index: 1000;
   width: 100%;
+  ${theme.ALIGN.ROW_CENTER}
   right: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.9);

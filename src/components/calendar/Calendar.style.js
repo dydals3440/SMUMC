@@ -6,9 +6,10 @@ import { FONT } from '../../constants/font';
 const Wrapper = styled.div`
   background-color: ${theme.COLOR.DARK.NAVY};
   border-radius: 20px;
-  width: 80%;
-  height: 100vh;
+  width: 100%;
+
   border: 1px solid black;
+  height: 90%;
   margin: 5px;
   padding: 20px;
 `;
@@ -18,7 +19,7 @@ const CalendarHead = styled.span`
   height: 80px;
   ${theme.ALIGN.ROW_CENTER}
   justify-content: space-around;
-  font-size: 55px;
+  font-size: 45px;
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
   color: ${theme.COLOR.LIGHT.WHITE};
 
@@ -58,7 +59,7 @@ const CalendarBody = styled.div`
   font-size: ${FONT_SIZE.L};
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(${({ fourCol }) => (fourCol ? 5 : 6)}, 1fr);
+  grid-template-rows: repeat(${({ fourCol }) => (fourCol ? 4 : 5)}, 1fr);
   font-family: ${FONT.IBM_PLEX_SANS_KR.SEMI_BOLD};
   color: ${theme.COLOR.LIGHT.WHITE};
   border: 1px solid white;
