@@ -55,7 +55,7 @@ const HeadDay = styled.span`
 `;
 
 const CalendarBody = styled.div`
-  height: 100%;
+  height: 100vh;
   font-size: ${FONT_SIZE.L};
   display: grid;
   grid-template-columns: repeat(7, 1fr);
