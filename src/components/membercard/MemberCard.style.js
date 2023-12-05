@@ -7,7 +7,7 @@ const Container = styled.div`
   padding: ${props => props.padding};
   width: ${props => props.width};
   height: ${props => props.height};
-  background: ${props => props.background};
+  background: ${theme.COLOR.LIGHT.WHITE};
   border-radius: ${props => props.radius || '10'}px;
   background: ${props => props.background};
   border: 2px solid black;

@@ -5,6 +5,8 @@ import { FONT } from '../../constants/font';
 
 const Wrapper = styled.div`
   ${theme.ALIGN.COLUMN_CENTER};
+  background-color: ${theme.COLOR.DARK.NAVY};
+  padding: 100px 0;
 `;
 
 const ImgBanner = styled.img`

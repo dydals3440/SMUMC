@@ -3,7 +3,6 @@ import { FONT_SIZE, FONT_WEIGHT } from '../../constants/size';
 
 const MemberCard = ({
   size,
-  background,
   radius,
   imgurl,
   name,
@@ -57,7 +56,6 @@ const MemberCard = ({
   return (
     <S.Container
       height={height}
-      background={background}
       width={width}
       radius={radius}
       fontweight={fontweight}

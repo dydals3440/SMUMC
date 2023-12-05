@@ -19,7 +19,7 @@ const MembersLayout = () => {
   return (
     <S.Wrapper>
       <Navbar />
-      <S.ImgBanner src={MembersImgUrl} />
+      {/* <S.ImgBanner src={MembersImgUrl} /> */}
       <S.TabContainer>
         <S.TabButton
           onClick={() => {
