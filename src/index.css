@@ -10,6 +10,12 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 @font-face {
   font-family: 'IBMPlexSansKR-Light';
   src: url(./assets/fonts/IBMPlexSansKR-Light.ttf);

@@ -14,7 +14,14 @@ const IntroduceBox = styled.div`
   }
 
   p {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+  }
+
+  @media ${theme.WINDOW_SIZE.MOBILE} {
+    p {
+      padding: 0 20px;
+      text-align: center;
+    }
   }
 `;
 export { IntroduceBox };
