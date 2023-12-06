@@ -52,7 +52,7 @@ const MembersAll = () => {
         {displayedMembers.map(({ name, year, part, sex, id, position }) => (
           <MemberCard
             key={id}
-            size='l'
+            size='m'
             name={name}
             th={year}
             department={part}

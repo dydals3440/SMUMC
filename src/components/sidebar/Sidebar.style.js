@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import theme from '../../theme';
 import { FONT_SIZE } from '../../constants/size';
+import { FONT } from '../../constants/font';
 
 const Wrapper = styled.div`
   position: fixed;
@@ -12,6 +13,7 @@ const Wrapper = styled.div`
   right: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.9);
+  font-family: ${FONT.IBM_PLEX_SANS_KR.REGULAR};
 `;
 
 const CloseBtn = styled.button`

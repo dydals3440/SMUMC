@@ -13,10 +13,15 @@ const Wrapper = styled.div`
     font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
     font-size: ${FONT_SIZE.FIVE_XL};
     color: ${theme.COLOR.LIGHT.WHITE};
-    width: 80%;
     text-align: center;
-    margin: 20px;
-    padding: 30px;
+    padding: 20px;
+  }
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    padding: 20px;
+    h1 {
+      font-size: ${FONT_SIZE.THREE_XL};
+    }
   }
 `;
 
