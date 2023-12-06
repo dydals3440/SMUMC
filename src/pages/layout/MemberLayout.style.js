@@ -4,9 +4,8 @@ import { FONT_SIZE } from '../../constants/size';
 import { FONT } from '../../constants/font';
 
 const Wrapper = styled.div`
-  margin: 0;
   ${theme.ALIGN.COLUMN_CENTER};
-  width: 100vw;
+  width: 100%;
   background-color: ${theme.COLOR.DARK.NAVY};
   height: 100%;
 `;

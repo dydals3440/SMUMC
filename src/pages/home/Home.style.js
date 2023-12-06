@@ -6,7 +6,8 @@ import theme from '../../theme';
 const Container = styled.div`
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
 
-  width: 100vw;
+  width: calc(100vw - (100vw - 100%));
+
   padding-bottom: 150px;
   background-color: black;
 

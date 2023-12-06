@@ -6,6 +6,7 @@ import { FONT } from '../../../constants/font';
 
 const FooterWrapper = styled.footer`
   width: 100%;
+
   height: 150px;
   padding: 0 80px;
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
