@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../../theme';
+
 const StyledButton = styled.button`
   width: ${props => props.width || props.fixwidth};
   height: ${props => props.height || props.fixheight};
@@ -9,6 +9,10 @@ const StyledButton = styled.button`
   font-size: ${props => props.fontsize};
   font-weight: ${props => props.fontweight};
   color: ${props => props.fontcolor};
+  outline: ${props => props.outline};
+
+  border: none;
+  cursor: pointer;
   border-radius: 16px;
   display: flex;
   align-items: center;
