@@ -6,15 +6,7 @@ import { FONT } from '../../constants/font';
 const Wrapper = styled.div`
   ${theme.ALIGN.COLUMN_CENTER};
   background-color: ${theme.COLOR.DARK.NAVY};
-  padding: 200px 100px;
-
-  @media ${theme.WINDOW_SIZE.TABLET} {
-    padding: 200px 50px;
-  }
-
-  @media ${theme.WINDOW_SIZE.MOBILE} {
-    padding: 200px 10px;
-  }
+  height: 100%;
 `;
 
 const ImgBanner = styled.img`
@@ -26,10 +18,20 @@ const ImgBanner = styled.img`
 
 const TabContainer = styled.div`
   ${theme.ALIGN.ROW_CENTER};
+  margin-top: 200px;
+  padding: 0 10px;
   gap: 25px;
+
+  @media ${theme.WINDOW_SIZE.TABLET} {
+    gap: 0;
+    margin-top: 200px;
+    padding: 0 10px;
+  }
 
   @media ${theme.WINDOW_SIZE.MOBILE} {
     gap: 0;
+    margin-top: 200px;
+    padding: 0 20px;
   }
 `;
 
