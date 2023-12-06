@@ -3,7 +3,7 @@ import theme from '../../../theme';
 
 const IntroduceBox = styled.div`
   ${theme.ALIGN.COLUMN_CENTER};
-  width: 100%;
+  width: 100vw;
   height: 100%;
 
   background-color: ${theme.COLOR.DARK.BLACK};
