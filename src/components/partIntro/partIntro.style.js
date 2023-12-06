@@ -13,6 +13,10 @@ const PartBox = styled.div`
   height: 300px;
 `;
 
+const CategoryBox = styled.button`
+  white-space: nowrap;
+`;
+
 const PartNav = styled.div`
   width: 80%;
   display: flex;
@@ -65,4 +69,4 @@ const PartContents = styled.div`
     font-size: ${FONT_SIZE.L};
   }
 `;
-export { Container, PartBox, PartNav, PartContents };
+export { Container, CategoryBox, PartBox, PartNav, PartContents };

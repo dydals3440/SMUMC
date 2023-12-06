@@ -31,13 +31,13 @@ function PartIntro() {
       <S.PartBox>
         <S.PartNav>
           {PART_INFOS.map(info => (
-            <motion.button
+            <S.CategoryBox
               key={info.part}
               onClick={() => handleButtonClick(info)}
               className={selectedPart.part === info.part ? 'selected' : ''}
             >
               {info.part}
-            </motion.button>
+            </S.CategoryBox>
           ))}
         </S.PartNav>
         <S.PartContents>
