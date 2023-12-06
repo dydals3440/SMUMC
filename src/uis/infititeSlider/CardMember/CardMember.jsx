@@ -7,7 +7,7 @@ const CardMember = ({ id, img, year, description, name, member }) => {
       <S.CardTop>
         <img src={img} alt={name} />
         <S.Wrapper>
-          <span>{name}</span>
+          <h3>{name}</h3>
           <span>({year}기)</span>
         </S.Wrapper>
       </S.CardTop>

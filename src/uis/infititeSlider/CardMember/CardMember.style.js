@@ -28,7 +28,7 @@ const CardBottom = styled.div`
   height: 100%;
 
   h3 {
-    font-size: ${FONT_SIZE.LG};
+    font-size: ${FONT_SIZE.SM};
     margin-bottom: 10px;
   }
 `;
@@ -49,7 +49,12 @@ const CardCategory = styled.div`
 `;
 
 const Wrapper = styled.div`
-  ${theme.ALIGN.ROW_CENTER}
+  ${theme.ALIGN.ROW_CENTER};
+  gap: 7px;
+
+  span {
+    font-size: ${FONT_SIZE.SM};
+  }
 `;
 
 const MemberWrapper = styled.div`
