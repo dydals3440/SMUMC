@@ -4,13 +4,17 @@ const HeroBox = () => {
   return (
     <S.Hero>
       <S.Wrapper>
-        <div>UNIVERSITY</div>
-        <div>MAKEUS</div>
-        <div>CHALLENGE</div>
+        <h1>UNIVERSITY</h1>
+        <h1>MAKEUS</h1>
+        <h1>CHALLENGE</h1>
         <p> 상명대학교 코딩 동아리</p>
+        <S.ApplyWrapper>
+          <S.Button>5기 지원 마감</S.Button>
+          <p>
+            2024년 초, 6기 모집 예정입니다. 자세한 일정은 NOTICES를 참고하세요.
+          </p>
+        </S.ApplyWrapper>
       </S.Wrapper>
-      <S.Button>5기 지원 마감</S.Button>
-      <p>2024년 초, 6기 모집 예정입니다. 자세한 일정은 NOTICES를 참고하세요.</p>
     </S.Hero>
   );
 };
