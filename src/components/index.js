@@ -11,7 +11,7 @@ import IntroduceBox from './homepage/IntroduceBox/IntroduceBox';
 import Calendar from './calendar/Calendar';
 import InfiniteSlider from '../uis/infititeSlider/InfiniteSlider';
 import Accordion from './accordion/Accordion';
-import ProjectCard from './projectCard/projectCard';
+import ProjectCard from './projectCard/ProjectCard';
 
 export {
   Navbar,
