@@ -10,8 +10,16 @@ const Container = styled.div`
 const PartBox = styled.div`
   ${theme.ALIGN.COLUMN_CENTER};
   padding: 10px;
-  width: 60%;
+  width: 50%;
   height: 300px;
+
+  @media ${theme.WINDOW_SIZE.TABLET} {
+    width: 60%;
+  }
+
+  @media ${theme.WINDOW_SIZE.MOBILE} {
+    width: 80%;
+  }
 `;
 
 const CategoryBox = styled.button`
@@ -42,10 +50,6 @@ const PartNav = styled.div`
     &.selected {
       color: ${theme.COLOR.LIGHT.YELLOW};
     }
-
-    @media ${theme.WINDOW_SIZE.MOBILE} {
-      width: 100px;
-    }
   }
 `;
 
@@ -62,11 +66,11 @@ const PartContents = styled.div`
   border-radius: 30px;
 
   @media ${theme.WINDOW_SIZE.TABLET} {
-    min-width: 800px;
+    min-width: 600px;
   }
 
   @media ${theme.WINDOW_SIZE.MOBILE} {
-    min-width: 500px;
+    min-width: 300px;
   }
 
   p {

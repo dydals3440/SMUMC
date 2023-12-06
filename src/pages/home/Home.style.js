@@ -5,7 +5,8 @@ import { FONT } from '../../constants/font';
 import theme from '../../theme';
 const Container = styled.div`
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
-  width: 100%;
+
+  width: 100vw;
   padding-bottom: 150px;
   background-color: black;
 
