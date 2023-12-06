@@ -7,16 +7,8 @@
 html {
   width: 100%;
   body: 100%;
-  overflow-y: scroll;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
 }
-
-/* body {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-} */
 
 @font-face {
   font-family: 'IBMPlexSansKR-Light';
