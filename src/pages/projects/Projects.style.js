@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import theme from '../../theme';
-import { RESPONSIVE_SIZE } from '../../constants/size';
+import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 import Pagination from '@mui/material/Pagination';
 
 const Container = styled.div`
@@ -13,6 +13,9 @@ const Container = styled.div`
 const Banner = styled.div`
   width: 100%;
   background-color: ${theme.COLOR.DARK.NAVY};
+  margin-bottom: 50px;
+  ${theme.ALIGN.COLUMN_CENTER}
+  color: ${theme.COLOR.LIGHT.WHITE};
   img {
     object-fit: cover;
     height: 250px;
@@ -20,12 +23,11 @@ const Banner = styled.div`
   }
 
   h1 {
-    display: flex;
+    font-size: ${FONT_SIZE.FIVE_XL};
     margin-top: 30px;
+    margin-bottom: 10px;
+
     justify-content: center;
-    color: ${theme.COLOR.LIGHT.WHITE};
-    font-size: 50px;
-    margin-bottom: 50px;
   }
 `;
 

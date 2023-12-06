@@ -3,7 +3,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import '../../index.css';
-import { MEMBERS } from '../../constants/members';
+
+import { PROJECTS } from '../../constants/projects';
 import * as S from './InfiniteSlider.style';
 
 import CardMember from './CardMember/CardMember';
@@ -48,8 +49,15 @@ const InfiniteSlider = () => {
   return (
     <S.Wrapper>
       <Slider {...settings}>
-        {MEMBERS.map(({ id, github, name, nickname }) => (
-          <CardMember id={id} github={github} name={name} nickname={nickname} />
+        {PROJECTS.map(({ id, img, year, description, name, member }) => (
+          <CardMember
+            id={id}
+            img={img}
+            year={year}
+            description={description}
+            name={name}
+            member={member}
+          />
         ))}
       </Slider>
     </S.Wrapper>
