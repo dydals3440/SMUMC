@@ -53,7 +53,7 @@ const MemberCard = ({ size, imgurl, name, th, department, badge, onClick }) => {
     >
       <S.ImageWrapper imgwidth={imgwidth} imgheight={imgheight}>
         <img src={imgurl} alt='umc 멤버들 사진입니다.' />
-        {size === 'm' && badge && <span>{badge}</span>}
+        {badge && <span>{badge}</span>}
       </S.ImageWrapper>
       <S.NameText namefontsize={namefontsize} namefontweight={namefontweight}>
         {name}
