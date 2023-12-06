@@ -13,7 +13,8 @@ import { MEMBERS } from '../../constants/members.js';
 
 const Home = () => {
   const allMemberCount = MEMBERS.length;
-  const currentMemberCount = MEMBERS.filter(m => m.year === 5);
+  const currentMember = MEMBERS.filter(m => m.year === 5);
+  const currentMemberCount = currentMember.length;
 
   return (
     <S.Container>
@@ -31,7 +32,7 @@ const Home = () => {
           />
           <CountUpCard
             title='현재 회원 수'
-            endNum={currentMemberCount.length}
+            endNum={currentMemberCount}
             lastUnit='명'
           />
           <CountUpCard title='현재 기수' endNum='5' lastUnit='기' />

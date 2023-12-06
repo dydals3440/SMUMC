@@ -59,7 +59,7 @@ const PartContents = styled.div`
   border-radius: 30px;
 
   @media ${theme.WINDOW_SIZE.TABLET} {
-    min-width: 700px;
+    min-width: 800px;
   }
 
   @media ${theme.WINDOW_SIZE.MOBILE} {
