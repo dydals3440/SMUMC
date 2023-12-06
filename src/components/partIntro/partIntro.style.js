@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import theme from '../../theme';
 import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 import { FONT } from '../../constants/font';
+
 const Container = styled.div`
-  ${theme.ALIGN.ROW_CENTER};
+  ${theme.ALIGN.COLUMN_CENTER};
 `;
 
 const PartBox = styled.div`
