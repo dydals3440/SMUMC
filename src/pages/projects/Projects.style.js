@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from '../../theme';
 
 const Container = styled.div`
-  height: 1000px;
+  height: 100%;
   width: 100%;
   background-color: ${theme.COLOR.DARK.GRAY};
 `;
@@ -25,10 +25,17 @@ const Banner = styled.div`
     margin-bottom: 50px;
   }
 `;
+
 const Wrapper = styled.div`
   ${theme.ALIGN.ROW_CENTER}
   width: 100%;
   gap: 10px;
+  height: 80%;
 `;
 
-export { Banner, Container, Wrapper };
+const ProjectWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  place-items: center;
+`;
+export { Banner, Container, Wrapper, ProjectWrapper };
