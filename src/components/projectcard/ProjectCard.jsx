@@ -43,6 +43,16 @@ const ProjectCard = ({ size, background, radius, onClick, props }) => {
       <S.ImageWrapper width={width} height={height} radius={radius}>
         <img src={img} alt={`${name} 프로젝트의 이미지입니다.`} />
       </S.ImageWrapper>
+      <S.Introduce width={width} height={height}>
+        <h1>{name}</h1>
+        <h2>{description}</h2>
+        <div>
+          {stack.map((item, index) => (
+            <span key={index}>{item}</span>
+          ))}
+        </div>
+        <div></div>
+      </S.Introduce>
     </S.Container>
   );
 };

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from '../../theme';
 import { RESPONSIVE_SIZE } from '../../constants/size';
+import Pagination from '@mui/material/Pagination';
 
 const Container = styled.div`
   height: 100%;
@@ -52,4 +53,10 @@ const ProjectWrapper = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
-export { Banner, Container, Wrapper, ProjectWrapper };
+
+const PaginationStyle = styled(Pagination)`
+  background-color: ${theme.COLOR.LIGHT.WHITE};
+  padding: 5px;
+  border-radius: 30px;
+`;
+export { Banner, Container, Wrapper, ProjectWrapper, PaginationStyle };
