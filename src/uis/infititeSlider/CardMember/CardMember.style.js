@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { FONT_SIZE } from '../../../constants/size';
+import { FONT_SIZE, RESPONSIVE_SIZE } from '../../../constants/size';
+import theme from '../../../theme';
 
 const CardWrapper = styled.div`
   border: 1px solid #fff;
@@ -13,10 +14,7 @@ const CardWrapper = styled.div`
 `;
 
 const CardTop = styled.div`
-  p {
-    font-size: ${FONT_SIZE.SM};
-    margin: 20px;
-  }
+  height: 250px;
 
   img {
     width: 100%;
@@ -26,16 +24,22 @@ const CardTop = styled.div`
   }
 `;
 const CardBottom = styled.div`
-  margin: 10px 20px;
+  margin: 0px 20px;
+
+  h3 {
+    font-size: ${FONT_SIZE.BASE};
+    margin-bottom: 10px;
+  }
 `;
 
 const CardCategory = styled.div`
+  height: 100px;
   position: relative;
 
   &::before {
+    position: absolute;
     content: '';
     background: rgb(255, 61, 61);
-    position: absolute;
     top: calc(100% + 10px);
     left: 0;
     right: 0;
@@ -43,4 +47,40 @@ const CardCategory = styled.div`
   }
 `;
 
-export { CardWrapper, CardTop, CardBottom, CardCategory };
+const Wrapper = styled.div`
+  ${theme.ALIGN.ROW_CENTER}
+
+  h2 {
+    font-size: ${FONT_SIZE.TWO_XL};
+    margin-top: 20px;
+  }
+`;
+
+const MemberWrapper = styled.div`
+  position: absolute;
+  bottom: 0;
+`;
+
+const Member = styled.div`
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0px 5px;
+  color: ${theme.COLOR.LIGHT.WHITE};
+  font-size: ${FONT_SIZE.XS};
+  border-radius: 5px;
+  border: 1px solid ${theme.COLOR.LIGHT.YELLOW};
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    // 모바일 사이즈일 때 깨짐
+  }
+`;
+
+export {
+  CardWrapper,
+  CardTop,
+  CardBottom,
+  CardCategory,
+  Wrapper,
+  MemberWrapper,
+  Member
+};

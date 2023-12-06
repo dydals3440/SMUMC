@@ -23,6 +23,10 @@ const Projects = () => {
       <S.Banner>
         <img src='../../public/images/code.webp' alt='project Image' />
         <h1>Projects</h1>
+        <h2>
+          UMC 동일 지부 내 타학교 학생과 상명대학교 학생이 협업해서 만들어낸
+          프로젝트입니다.
+        </h2>
       </S.Banner>
       <S.Wrapper>
         {activeCategories.map((category, idx) => (
