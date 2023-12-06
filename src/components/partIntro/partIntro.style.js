@@ -20,12 +20,11 @@ const CategoryBox = styled.button`
 `;
 
 const PartNav = styled.div`
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 5px;
   margin-bottom: 10px;
-  min-width: 400px;
 
   button {
     color: ${theme.COLOR.LIGHT.WHITE};

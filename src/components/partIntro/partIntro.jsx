@@ -43,7 +43,7 @@ function PartIntro() {
         <S.PartContents>
           <motion.div>
             {selectedPart && (
-              <motion.div
+              <h4
                 variants={textReveal}
                 initial='initial'
                 animate='animate'
@@ -53,7 +53,7 @@ function PartIntro() {
                   PART_INFOS.find(info => info.part === selectedPart.part)
                     .description
                 }
-              </motion.div>
+              </h4>
             )}
           </motion.div>
         </S.PartContents>
