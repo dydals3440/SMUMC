@@ -8,6 +8,7 @@ html {
   width: 100%;
   body: 100%;
   overflow-x: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 body {
