@@ -7,14 +7,14 @@ const Container = styled.div`
   padding: ${props => props.padding};
   width: ${props => props.width};
   height: ${props => props.height};
+  background: ${theme.COLOR.LIGHT.WHITE};
+  border-radius: 20px;
   background: ${props => props.background};
-  border-radius: ${props => props.radius || '10'}px;
-  background: ${props => props.background};
-  border: 2px solid black;
   font-weight: ${props => props.fontweight};
   cursor: pointer;
   &:hover {
-    background-color: #ffefff;
+    transform: scale(0.95);
+    transition: all 0.2s linear;
   }
 
   div {
@@ -27,18 +27,19 @@ const Container = styled.div`
 `;
 
 const ImageWrapper = styled.div`
+  position: relative;
   width: ${props => props.imgwidth};
   height: ${props => props.imgheight};
 
   img {
     width: 100%;
     height: 100%;
-    border-radius: 3rem;
+    border-radius: 2rem;
   }
   span {
     position: absolute;
-    margin-bottom: 80px;
-    margin-left: 20px;
+    left: 1px;
+    top: 5px;
     padding: 8px;
     background-color: #e5e5e5;
     width: auto;
@@ -62,4 +63,16 @@ const IntroText = styled.p`
   font-size: ${props => props.introfontsize};
 `;
 
-export { Container, ImageWrapper, NameText, GenerationText, IntroText };
+const TextContainer = styled.div`
+  display: flex;
+  gap: 5px;
+`;
+
+export {
+  Container,
+  ImageWrapper,
+  NameText,
+  GenerationText,
+  IntroText,
+  TextContainer
+};

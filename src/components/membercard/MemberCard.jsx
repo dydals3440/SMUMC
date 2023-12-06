@@ -1,17 +1,7 @@
 import * as S from '../membercard/MemberCard.style';
 import { FONT_SIZE, FONT_WEIGHT } from '../../constants/size';
 
-const MemberCard = ({
-  size,
-  background,
-  radius,
-  imgurl,
-  name,
-  th,
-  department,
-  badge,
-  onClick
-}) => {
+const MemberCard = ({ size, imgurl, name, th, department, badge, onClick }) => {
   const sizeHandler = size => {
     switch (size) {
       case 'l':
@@ -23,7 +13,7 @@ const MemberCard = ({
           generationfontsize: `${FONT_SIZE.BASE}`,
           introfontsize: `${FONT_SIZE.BASE}`,
           fontweight: `${FONT_WEIGHT.FONT_BLACK}`,
-          imgwidth: '325px',
+          imgwidth: '300px',
           imgheight: '300px'
         };
       case 'm':
@@ -57,26 +47,24 @@ const MemberCard = ({
   return (
     <S.Container
       height={height}
-      background={background}
       width={width}
-      radius={radius}
       fontweight={fontweight}
       onClick={onClick}
     >
-      <S.ImageWrapper imgwidth={imgwidth} imgheight={imgheight} radius={radius}>
+      <S.ImageWrapper imgwidth={imgwidth} imgheight={imgheight}>
         <img src={imgurl} alt='umc 멤버들 사진입니다.' />
         {size === 'm' && badge && <span>{badge}</span>}
       </S.ImageWrapper>
       <S.NameText namefontsize={namefontsize} namefontweight={namefontweight}>
         {name}
       </S.NameText>
-      <div>
+      <S.TextContainer>
         <S.GenerationText generationfontsize={generationfontsize}>
-          {th}
+          {th}기
         </S.GenerationText>
         <p>|</p>
         <S.IntroText introfontsize={introfontsize}>{department}</S.IntroText>
-      </div>
+      </S.TextContainer>
     </S.Container>
   );
 };
