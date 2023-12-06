@@ -29,8 +29,9 @@ const Projects = () => {
           <Button
             key={idx}
             size='m'
-            fontcolor={theme.COLOR.LIGHT.YELLOW}
-            background={theme.COLOR.DARK.GRAY}
+            fontcolor={theme.COLOR.LIGHT.WHITE_GRAY}
+            background={theme.COLOR.DARK.NAVY}
+            border={`2px solid ${theme.COLOR.LIGHT.YELLOW}`}
             onclick={() => handleCategory(category)}
           >
             {category === '전체' ? '전체' : `${category}기`}

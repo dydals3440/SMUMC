@@ -58,7 +58,9 @@ const Introduce = styled.div`
   span {
     border-radius: 3rem;
     padding: 10px;
-    background-color: ${theme.COLOR.DARK.GRAY};
+    background-color: ${theme.COLOR.DARK.NAVY};
+    border: 2px solid ${theme.COLOR.LIGHT.BEIGE};
+    margin: 0 5px;
   }
 
   &:hover {
