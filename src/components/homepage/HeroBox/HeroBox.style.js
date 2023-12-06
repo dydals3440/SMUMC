@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
 import {
   FONT_SIZE,
   FONT_WEIGHT,
@@ -43,6 +44,14 @@ const Wrapper = styled.div`
   }
 `;
 
+const shakeAnimation = keyframes`
+0% { transform: translate(-5px, 0) rotate(-5deg); }
+25% { transform: translate(5px, 0) rotate(5deg); }
+50% { transform: translate(-5px, 0) rotate(-5deg); }
+75% { transform: translate(5px, 0) rotate(5deg); }
+100% { transform: translate(-5px, 0) rotate(-5deg); }
+`;
+
 const Button = styled.button`
   width: 180px;
   height: 50px;
@@ -53,6 +62,11 @@ const Button = styled.button`
   color: white;
   border: none;
   cursor: pointer;
+  animation: ${shakeAnimation} 2s ease;
+
+  &:active {
+    animation: ${shakeAnimation} 4s ease infinite;
+  }
 
   &:hover {
     background-color: ${theme.COLOR.PRIMARY.BLUE};
