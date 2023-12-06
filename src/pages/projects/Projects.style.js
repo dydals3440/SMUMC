@@ -4,7 +4,7 @@ import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 import Pagination from '@mui/material/Pagination';
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   ${theme.ALIGN.COLUMN_CENTER};
   background-color: ${theme.COLOR.DARK.NAVY};
@@ -28,6 +28,11 @@ const Banner = styled.div`
     margin-bottom: 10px;
 
     justify-content: center;
+  }
+
+  h2 {
+    padding: 20px;
+    text-align: center;
   }
 `;
 
