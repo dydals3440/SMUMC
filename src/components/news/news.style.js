@@ -54,7 +54,7 @@ const Contents = styled.div`
 
 const TextBox = styled.div`
   margin: auto;
-  width: 400px;
+  padding: 20px;
 
   @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
     h2 {

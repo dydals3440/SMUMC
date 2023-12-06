@@ -9,7 +9,7 @@ function News() {
           <S.Contents key={id}>
             <S.Img src={image} alt={title} />
             <S.TextBox>
-              {/* <h2>{title}</h2> */}
+              <h2>{title}</h2>
               <h3>{description}</h3>
             </S.TextBox>
           </S.Contents>
