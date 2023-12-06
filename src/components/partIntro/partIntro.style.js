@@ -42,6 +42,10 @@ const PartNav = styled.div`
     &.selected {
       color: ${theme.COLOR.LIGHT.YELLOW};
     }
+
+    @media ${theme.WINDOW_SIZE.MOBILE} {
+      width: 100px;
+    }
   }
 `;
 
