@@ -53,6 +53,9 @@ const MemberCard = ({ size, imgurl, name, th, department, badge, onClick }) => {
       animate={{
         scale: [0.9, 1.05, 1]
       }}
+      whileHover={{
+        scale: 0.95
+      }}
     >
       <S.ImageWrapper imgwidth={imgwidth} imgheight={imgheight}>
         <img src={imgurl} alt='umc 멤버들 사진입니다.' />

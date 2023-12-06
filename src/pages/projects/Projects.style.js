@@ -4,7 +4,7 @@ import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 import Pagination from '@mui/material/Pagination';
 
 const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   width: 100%;
   ${theme.ALIGN.COLUMN_CENTER};
   background-color: ${theme.COLOR.DARK.NAVY};
@@ -13,7 +13,7 @@ const Container = styled.div`
 const Banner = styled.div`
   width: 100%;
   background-color: ${theme.COLOR.DARK.NAVY};
-  margin-bottom: 50px;
+  margin: 100px 0;
   ${theme.ALIGN.COLUMN_CENTER}
   color: ${theme.COLOR.LIGHT.WHITE};
   img {

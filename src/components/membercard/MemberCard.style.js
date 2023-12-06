@@ -13,10 +13,6 @@ const Container = styled(motion.div)`
   background: ${props => props.background};
   font-weight: ${props => props.fontweight};
   cursor: pointer;
-  &:hover {
-    transform: scale(0.95);
-    transition: all 0.2s linear;
-  }
 
   div {
     margin-top: 5px;
@@ -37,6 +33,7 @@ const ImageWrapper = styled.div`
     height: 100%;
     border-radius: 2rem;
   }
+
   span {
     position: absolute;
     left: 1px;
