@@ -34,12 +34,15 @@ const Wrapper = styled.div`
   width: 100%;
   gap: 10px;
   height: 80%;
+  margin-bottom: 20px;
 `;
 
 const ProjectWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
 
   @media (max-width: ${RESPONSIVE_SIZE.PC}) {
     grid-template-columns: repeat(2, 1fr);
