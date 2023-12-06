@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+#root {
+  width: 100%;
+}
+
+#app {
+  height: 100vh;
+}
+
 @font-face {
   font-family: 'IBMPlexSansKR-Light';
   src: url(./assets/fonts/IBMPlexSansKR-Light.ttf);
