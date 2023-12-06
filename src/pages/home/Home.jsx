@@ -9,10 +9,7 @@ import {
   InfiniteSlider
 } from '../../components';
 
-import { MEMBERS } from '../../constants/members';
-
 const Home = () => {
-  console.log(MEMBERS.length());
   return (
     <S.Container>
       <HeroBox />
