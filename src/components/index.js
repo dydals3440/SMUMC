@@ -5,9 +5,9 @@ import Sidebar from './sidebar/Sidebar';
 import CountUpCard from './countupCard/CountUpCard';
 import SliderCard from './sliderCard/SliderCard';
 import HeroBox from './homepage/HeroBox/HeroBox';
-import ActivityIntro from './activityIntro/activityIntro';
+import PartIntro from './partIntro/partIntro';
+import News from './news/news';
 import IntroduceBox from './homepage/IntroduceBox/IntroduceBox';
-import EmojiBox from './homepage/EmojiBox/EmojiBox';
 import Calendar from './calendar/Calendar';
 import InfiniteSlider from '../uis/infititeSlider/InfiniteSlider';
 import Accordion from './accordion/Accordion';
@@ -20,8 +20,8 @@ export {
   SliderCard,
   HeroBox,
   IntroduceBox,
-  EmojiBox,
-  ActivityIntro,
+  PartIntro,
+  News,
   Calendar,
   InfiniteSlider,
   Accordion

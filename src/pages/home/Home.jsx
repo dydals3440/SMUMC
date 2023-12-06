@@ -2,10 +2,10 @@ import * as S from './Home.style';
 
 import {
   CountUpCard,
-  EmojiBox,
   IntroduceBox,
   HeroBox,
-  ActivityIntro,
+  PartIntro,
+  News,
   InfiniteSlider
 } from '../../components';
 
@@ -23,7 +23,12 @@ const Home = () => {
           <CountUpCard title='현재 회원 수' endNum='40' lastUnit='명' />
           <CountUpCard title='현재 기수' endNum='4' lastUnit='기' />
         </S.Wrapper>
-        <EmojiBox />
+      </IntroduceBox>
+
+      <IntroduceBox>
+        <h1>총 n개의 파트 팀으로 구성</h1>
+        <p>2023년 하반기 기준</p>
+        <PartIntro />
       </IntroduceBox>
 
       <IntroduceBox>
@@ -34,28 +39,11 @@ const Home = () => {
         </p>
         <InfiniteSlider />
       </IntroduceBox>
-      <IntroduceBox>
-        <h1>ACTIVITY</h1>
-        <p>
-          University MakeUs Challenge(UMC-SMU)는 상명대학교 대학교 동아리
-          입니다.
-        </p>
-        <ActivityIntro />
-      </IntroduceBox>
 
       <IntroduceBox>
-        <h1>SPONSERED BY</h1>
-        <p>
-          University MakeUs Challenge(UMC-SMU)는 상명대학교 대학교 동아리
-          입니다.
-        </p>
-      </IntroduceBox>
-      <IntroduceBox>
-        <h1>RECRUITMENT</h1>
-        <p>
-          University MakeUs Challenge(UMC-SMU)는 상명대학교 대학교 동아리
-          입니다.
-        </p>
+        <h1>따끈한 최신 소식</h1>
+        <p>UMC 뉴스레터</p>
+        <News />
       </IntroduceBox>
     </S.Container>
   );
