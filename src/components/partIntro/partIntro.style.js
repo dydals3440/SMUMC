@@ -18,6 +18,7 @@ const PartNav = styled.div`
   justify-content: space-between;
   padding: 5px;
   margin-bottom: 10px;
+  min-width: 400px;
 
   button {
     color: ${theme.COLOR.LIGHT.WHITE};
@@ -28,15 +29,20 @@ const PartNav = styled.div`
     &:hover {
       color: ${theme.COLOR.LIGHT.YELLOW};
     }
+
+    &.selected {
+      color: ${theme.COLOR.LIGHT.YELLOW};
+    }
   }
 `;
 
 const PartContents = styled.div`
   background-color: #232731;
   color: white;
-  padding: 60px;
+  padding: 50px;
   width: 90%;
   height: 80%;
   border-radius: 30px;
+  min-width: 400px;
 `;
 export { Container, PartBox, PartNav, PartContents };

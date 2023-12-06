@@ -14,7 +14,11 @@ function PartIntro() {
       <S.PartBox>
         <S.PartNav>
           {PART_INFOS.map(info => (
-            <button key={info.part} onClick={() => handleButtonClick(info)}>
+            <button
+              key={info.part}
+              onClick={() => handleButtonClick(info)}
+              className={selectedPart.part === info.part ? 'selected' : ''}
+            >
               {info.part}
             </button>
           ))}

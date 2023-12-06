@@ -43,7 +43,7 @@ const Contents = styled.div`
   }
 
   @media (max-width: ${parseInt(RESPONSIVE_SIZE.PC) + 100}px) {
-    width: 100%;
+    width: 70%;
   }
 
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
@@ -64,7 +64,7 @@ const TextBox = styled.div`
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     ${theme.ALIGN.COLUMN_CENTER};
     h2 {
-      font-size: ${FONT_SIZE.XL};
+      font-size: ${FONT_SIZE.LG};
     }
 
     h3 {
