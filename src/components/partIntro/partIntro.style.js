@@ -18,7 +18,7 @@ const PartBox = styled.div`
   }
 
   @media ${theme.WINDOW_SIZE.MOBILE} {
-    width: 80%;
+    width: 95%;
   }
 `;
 
