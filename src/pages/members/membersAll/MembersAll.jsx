@@ -49,13 +49,14 @@ const MembersAll = () => {
         </S.SelectStyle>
       </S.FormControlStyle>
       <S.MemberContainer>
-        {displayedMembers.map(({ name, year, part, sex, id }) => (
+        {displayedMembers.map(({ name, year, part, sex, id, position }) => (
           <MemberCard
             key={id}
             size='l'
             name={name}
             th={year}
             department={part}
+            badge={position !== '챌린저' && position}
             imgurl={sex === 'w' ? DEFAULT_FEMALE_IMAGE : DEFAULT_MALE_IMAGE}
             onClick={() => {
               navigate(`${BROWSER_PATH.MEMBERS.BASE}/${id}`);

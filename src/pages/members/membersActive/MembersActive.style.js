@@ -31,7 +31,7 @@ const MemberContainer = styled.div`
   ${theme.ALIGN.ROW_CENTER};
   gap: 30px;
   flex-wrap: wrap;
-  padding: 10px 0px;
+  padding: 10px 40px;
 `;
 
 const ChallengerContainer = styled.div`

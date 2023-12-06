@@ -13,7 +13,7 @@ const MembersActive = () => {
       <S.MemberContainer>
         {MEMBERS.map(
           ({ id, name, position, year, part, sex }) =>
-            (position === '회장' || position === '부회장') &&
+            position !== '챌린저' &&
             year === 5 && (
               <MemberCard
                 size='m'
@@ -33,7 +33,7 @@ const MembersActive = () => {
       <S.ChallengerContainer>
         {MEMBERS.map(
           ({ position, name, year, part, sex, id }) =>
-            (position !== '회장' || position !== '부회장') &&
+            position === '챌린저' &&
             year === 5 && (
               <MemberCard
                 size='m'
