@@ -36,7 +36,7 @@ function PartIntro() {
               onClick={() => handleButtonClick(info)}
               className={selectedPart.part === info.part ? 'selected' : ''}
             >
-              {info.part}
+              <span>{info.part}</span>
             </S.CategoryBox>
           ))}
         </S.PartNav>

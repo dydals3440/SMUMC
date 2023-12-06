@@ -15,8 +15,11 @@ const PartBox = styled.div`
 `;
 
 const CategoryBox = styled.button`
-  white-space: nowrap;
-  ${theme.ALIGN.ROW_CENTER}
+  ${theme.ALIGN.ROW_CENTER};
+
+  p {
+    white-space: nowrap;
+  }
 `;
 
 const PartNav = styled.div`
