@@ -7,9 +7,6 @@
 html {
   width: 100%;
   body: 100%;
-  overflow-x: hidden;
-
-  isolate: isolate;
 }
 
 body {
