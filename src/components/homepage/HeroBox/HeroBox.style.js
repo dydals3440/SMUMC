@@ -55,7 +55,7 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    color: ${theme.COLOR.PRIMARY.BLUE};
+    background-color: ${theme.COLOR.PRIMARY.BLUE};
   }
 `;
 
