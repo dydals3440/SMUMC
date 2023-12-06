@@ -27,7 +27,7 @@ const Button = ({
         };
       case 'm':
         return {
-          fixwidth: '180px',
+          fixwidth: '100px',
           fixheight: '50px',
           fixpadding: '24px 25px',
           fontsize: `${FONT_SIZE.BASE}`,

@@ -8,7 +8,7 @@ const PROJECTS = [
     year: 3,
     member: ['하비/이승주'],
     stack: ['Kotlin', 'Spring'],
-    img: null,
+    img: '/3year/가치더치/가치더치.png',
     release: 'https://www.makeus.in/8dc44d59-645d-4203-bdb4-9398bb0031df'
   },
   {
@@ -27,7 +27,7 @@ const PROJECTS = [
       '해누/김현우'
     ],
     stack: ['Swift', 'Spring'],
-    img: null,
+    img: '/3year/다마고치/다마고치.png',
     release: 'https://www.makeus.in/e046ab3f-95f2-4210-913b-fae4a4251e53'
   },
   {
@@ -39,7 +39,7 @@ const PROJECTS = [
     year: 3,
     member: ['조예빈/예콩', '솔솔/이한솔'],
     stack: ['Swift', 'Spring'],
-    img: null,
+    img: '/3year/Waither/Waither.png',
     release: 'https://www.makeus.in/cfe1c32d-89df-43b1-a136-843c3943dbb0'
   },
   {
@@ -51,7 +51,7 @@ const PROJECTS = [
     year: 4,
     member: ['링키/윤수빈', '동키/김동현'],
     stack: ['KOTLIN', 'SPRING'],
-    img: null,
+    img: '/4year/동네친구/동네친구.png',
     release: 'https://www.makeus.in/924a9232-80d1-4354-b6e9-b0763b81eb10'
   },
   {
@@ -63,7 +63,7 @@ const PROJECTS = [
     year: 4,
     member: ['코코/최진규'],
     stack: ['KOTLIN', 'NODE'],
-    img: null,
+    img: '/4year/Posestion/Posestion.png',
     release: 'https://www.makeus.in/e41624c5-9fd1-4b8d-be1a-ea1b1105298c'
   },
   {
@@ -76,7 +76,7 @@ const PROJECTS = [
     year: 4,
     member: ['와제/정여진', '예닝/문예윤'],
     stack: ['KOTLIN', 'NODE'],
-    img: null,
+    img: '/4year/pinple/Pinple.png',
     release: 'https://www.makeus.in/a9caff6e-8ce7-4a1f-8dad-4f29e3e046fb'
   },
   {
@@ -88,21 +88,8 @@ const PROJECTS = [
     year: 4,
     member: ['검정/권혁찬', '이네/설인혜', '윤/권오윤', '제이미/김준환'],
     stack: ['KOTLIN', 'SPRING'],
-    img: null,
+    img: '/4year/ARMANAGE/ARMANAGE.png',
     release: null
-  },
-  {
-    id: 8,
-    name: 'puppyfriend',
-    description:
-      '사교성 부족한 강아지에게 친구를 만들어주고 싶은데, 주변에 아는 견주가 없다면? 퍼피프렌드를 사용해보자!',
-    theme: ['ANDROID', 'SPRING'],
-    github: null,
-    year: 4,
-    member: ['엘레나/권유정', '우현/이현우'],
-    stack: ['KOTLIN', 'SPRING'],
-    img: null,
-    release: 'https://www.makeus.in/2e8609a0-4ef2-418f-8f2a-f31fbe3535e3'
   },
   {
     id: 9,
@@ -113,7 +100,7 @@ const PROJECTS = [
     year: 4,
     member: ['주니/김영준', '폴/김필규', '딩동/이동현'],
     stack: ['SWIFT', 'NODE'],
-    img: null,
+    img: '/4year/퀸텟/퀸텟.png',
     release: 'https://www.makeus.in/4d141c41-5f49-4dc6-8b49-b0c7144ca79a'
   },
   {
@@ -125,7 +112,7 @@ const PROJECTS = [
     year: 4,
     member: ['니니/김유빈', '위즈덤/정슬기', '피딕/황인성'],
     stack: ['SWIFT', 'SPRING'],
-    img: null,
+    img: '/4year/바른이/바른이.png',
     release: 'https://www.makeus.in/4d141c41-5f49-4dc6-8b49-b0c7144ca79a'
   },
   {
@@ -143,7 +130,7 @@ const PROJECTS = [
       '한뉴/한유성'
     ],
     stack: ['SWIFT', 'SPRING'],
-    img: null,
+    img: '/4year/뮤넥팅/뮤넥팅.png',
     release: 'https://www.makeus.in/62b0399d-8986-4097-ab84-0e79f5472d68'
   },
   {
@@ -163,7 +150,7 @@ const PROJECTS = [
       '뻔뻔/김건'
     ],
     stack: ['REACT', 'NODE'],
-    img: null,
+    img: '/4year/홈푸파/홈푸파.png',
     release: 'https://www.makeus.in/839dd620-1b83-40f5-aa7c-8cc6e4c09e66'
   },
   {
@@ -175,7 +162,7 @@ const PROJECTS = [
     year: 4,
     member: ['덕구/이다슬', '포디/정서현', '케빈/김근식'],
     stack: ['REACT', 'SPRING'],
-    img: null,
+    img: '/4year/festie/festie.png',
     release: 'https://www.makeus.in/b840fac8-6171-430a-9328-f3735352c976'
   },
   {
@@ -195,20 +182,8 @@ const PROJECTS = [
       '사하/윤근수'
     ],
     stack: ['REACT', 'SPRING'],
-    img: null,
+    img: '/4year/healody/healody.png',
     release: 'https://www.makeus.in/3b82ef8f-8398-465f-9dc6-31f383742005'
-  },
-  {
-    id: 15,
-    name: 'TODIS',
-    description: '날씨앱 하나로 옷 코디까지 쉽고 빠르게',
-    theme: ['WEB', 'SPRING'],
-    github: null,
-    year: 4,
-    member: ['블루/최민주', '하비/이승주'],
-    stack: ['REACT', 'SPRING'],
-    img: null,
-    release: null
   }
 ];
 
