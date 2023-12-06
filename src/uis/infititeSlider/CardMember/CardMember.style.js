@@ -8,7 +8,7 @@ const CardWrapper = styled.div`
   border-radius: 8px;
   overflow: hidden;
 
-  height: 400px;
+  height: 500px;
   color: #fff;
   cursor: pointer;
 `;
@@ -25,9 +25,10 @@ const CardTop = styled.div`
 `;
 const CardBottom = styled.div`
   margin: 0px 20px;
+  height: 100%;
 
   h3 {
-    font-size: ${FONT_SIZE.BASE};
+    font-size: ${FONT_SIZE.LG};
     margin-bottom: 10px;
   }
 `;
@@ -40,7 +41,7 @@ const CardCategory = styled.div`
     position: absolute;
     content: '';
     background: rgb(255, 61, 61);
-    top: calc(100% + 10px);
+    top: -20px;
     left: 0;
     right: 0;
     height: 2px;
@@ -49,27 +50,19 @@ const CardCategory = styled.div`
 
 const Wrapper = styled.div`
   ${theme.ALIGN.ROW_CENTER}
-
-  h2 {
-    font-size: ${FONT_SIZE.TWO_XL};
-    margin-top: 20px;
-  }
 `;
 
 const MemberWrapper = styled.div`
-  position: absolute;
-  bottom: 0;
+  width: 100%;
+  text-align: center;
 `;
 
 const Member = styled.div`
-  display: inline-block;
-  margin: 0 5px;
-  padding: 0px 5px;
   color: ${theme.COLOR.LIGHT.WHITE};
   font-size: ${FONT_SIZE.XS};
   border-radius: 5px;
   border: 1px solid ${theme.COLOR.LIGHT.YELLOW};
-
+  margin-bottom: 2px;
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     // 모바일 사이즈일 때 깨짐
   }
