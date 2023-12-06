@@ -1,6 +1,18 @@
 import * as S from '../projectcard/ProjectCard.style';
 
-const ProjectCard = ({ size, background, radius, imgurl, onClick }) => {
+const ProjectCard = ({ size, background, radius, onClick, props }) => {
+  const {
+    name,
+    description,
+    theme,
+    github,
+    year,
+    member,
+    stack,
+    img,
+    release
+  } = props;
+
   const sizeHandler = size => {
     switch (size) {
       case 'l':
@@ -10,8 +22,8 @@ const ProjectCard = ({ size, background, radius, imgurl, onClick }) => {
         };
       case 'm':
         return {
-          width: '260px',
-          height: '278px'
+          width: '400px',
+          height: '400px'
         };
       default:
         throw new Error(`지원되지 않는 ${size}의 카드입니다.`);
@@ -29,7 +41,7 @@ const ProjectCard = ({ size, background, radius, imgurl, onClick }) => {
       onClick={onClick}
     >
       <S.ImageWrapper width={width} height={height} radius={radius}>
-        <img src={imgurl} alt='umc 프로젝트 사진입니다.' />
+        <img src={img} alt={`${name} 프로젝트의 이미지입니다.`} />
       </S.ImageWrapper>
     </S.Container>
   );

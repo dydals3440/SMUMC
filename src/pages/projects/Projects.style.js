@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 import theme from '../../theme';
+import { RESPONSIVE_SIZE } from '../../constants/size';
 
 const Container = styled.div`
   height: 100%;
   width: 100%;
-  background-color: ${theme.COLOR.DARK.GRAY};
+  ${theme.ALIGN.COLUMN_CENTER};
+  background-color: ${theme.COLOR.DARK.NAVY};
 `;
 
 const Banner = styled.div`
   width: 100%;
-  background-color: ${theme.COLOR.DARK.GRAY};
+  background-color: ${theme.COLOR.DARK.NAVY};
   img {
     object-fit: cover;
     height: 250px;
@@ -35,7 +37,19 @@ const Wrapper = styled.div`
 
 const ProjectWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
+
+  @media (max-width: ${RESPONSIVE_SIZE.PC}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 export { Banner, Container, Wrapper, ProjectWrapper };
