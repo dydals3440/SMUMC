@@ -1,15 +1,24 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
+:root {
+ — app-height: 100%;
 }
 
-#root {
+html,
+body {
+ padding: 0;
+ margin: 0;
+ overflow: hidden;
+ width: 100vw;
+ height: 100vh;
+ height: var( — app-height);
+}
+
+/* #root {
   width: 100%;
 }
 
 #app {
   height: 100vh;
-}
+} */
 
 @font-face {
   font-family: 'IBMPlexSansKR-Light';
