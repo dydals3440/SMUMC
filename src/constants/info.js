@@ -1,10 +1,16 @@
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import ForumIcon from '@mui/icons-material/Forum';
+import { Instagram } from '@mui/icons-material';
 
 const FOOTER_INFOS = [
   { icon: EmailIcon, text: 'dydals3440@gmail.com' },
   { icon: LocationOnIcon, text: '서울특별시 종로구 홍지문2길 20 상명대학교' }
+];
+
+const SOCIAL_INFOS = [
+  { icon: ForumIcon, url: 'https://open.kakao.com/o/s0svOsWf' },
+  { icon: Instagram, url: 'https://www.instagram.com/smu_makeus_challenge/' }
 ];
 
 const NEWS_INFOS = [
@@ -13,14 +19,14 @@ const NEWS_INFOS = [
     title: 'UMC 5기 데모데이',
     description:
       'UMC 5기 방학 프로젝트가 2024 방학 중 진행됩니다. KISS 지부 아이디어를 토대로한 PM 챌린저의 기획 소개를 통해 여러 차례에 걸쳐 개발자가 매칭됩니다. 1차 매칭은 12월 10일(일)에 시작됩니다. 많은 관심 바랍니다!',
-    image: '/public/images/contest.webp'
+    image: '/images/demoday.webp'
   },
   {
     id: 2,
     title: '5th UMC iOS Conference',
     description:
       'iOS를 같이 공부하고 있는 사람들의 이야기도 들으며 행사에 참여한 다른 챌린저들과 의미 있는 시간을 가져볼 수 있으면 좋겠습니다.',
-    image: '/public/images/workshop.webp'
+    image: '/images/workshop.webp'
   }
 ];
 
@@ -62,4 +68,4 @@ const FAQS_TEXT = [
   }
 ];
 
-export { FOOTER_INFOS, NEWS_INFOS, FAQS_TEXT };
+export { FOOTER_INFOS, NEWS_INFOS, SOCIAL_INFOS, FAQS_TEXT };

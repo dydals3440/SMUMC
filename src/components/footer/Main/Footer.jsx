@@ -1,10 +1,8 @@
-import * as S from './Footer.style';
-
 import { Link } from 'react-router-dom';
 
-import { FOOTER_INFOS } from '../../../constants/info';
-import ForumIcon from '@mui/icons-material/Forum';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import * as S from './Footer.style';
+
+import { FOOTER_INFOS, SOCIAL_INFOS } from '../../../constants/info';
 import { NAME } from '../../../constants/developer';
 
 const Footer = () => {
@@ -12,8 +10,8 @@ const Footer = () => {
     <S.FooterWrapper>
       <S.InfoBox>
         <S.CreatorNameContainer>
-          <S.CreatorName>made by</S.CreatorName>
-          {NAME.map(({ name, id }, index) => (
+          <S.CreatorName>Develop By</S.CreatorName>
+          {NAME.map(({ name, id }) => (
             <p key={id}>{name}</p>
           ))}
         </S.CreatorNameContainer>
@@ -27,20 +25,13 @@ const Footer = () => {
         })}
       </S.InfoBox>
       <S.LinkBox>
-        <Link
-          to='https://kakaotalk.new-version.download/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <S.Icon component={ForumIcon} inheritViewBox />
-        </Link>
-        <Link
-          to='https://github.com/SMUTAXI/SMU-TAXI'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <S.Icon component={GitHubIcon} inheritViewBox />
-        </Link>
+        {SOCIAL_INFOS.map(({ url, icon }) => {
+          return (
+            <Link to={url} target='_blank' rel='noopener noreferrer'>
+              <S.Icon component={icon} inheritViewBox />
+            </Link>
+          );
+        })}
       </S.LinkBox>
     </S.FooterWrapper>
   );
