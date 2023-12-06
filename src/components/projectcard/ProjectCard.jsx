@@ -55,11 +55,26 @@ const ProjectCard = ({ size, background, radius, onClick, props }) => {
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
-      <S.ImageWrapper width={width} height={height} radius={radius}>
+      <S.ImageWrapper
+        width={width}
+        height={height}
+        radius={radius}
+        animate={{
+          scale: [0.3, 1.03, 0.95],
+          borderRadius: ['20%', '30%', '40%', '30%', '20%']
+        }}
+      >
         <img src={img} alt={`${name} 프로젝트의 이미지입니다.`} />
       </S.ImageWrapper>
       {isHovering && (
-        <S.Introduce width={width} height={height}>
+        <S.Introduce
+          width={width}
+          height={height}
+          animate={{
+            scale: [0.3, 1.03, 0.95],
+            borderRadius: ['20%', '30%', '40%', '30%', '20%']
+          }}
+        >
           <h1>{name}</h1>
           <h2>{description}</h2>
           <div>

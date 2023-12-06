@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import theme from '../../theme';
 import { FONT_SIZE, FONT_WEIGHT } from '../../constants/size';
+import { motion } from 'framer-motion';
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   ${theme.ALIGN.COLUMN_CENTER}
   padding: ${props => props.padding};
   width: ${props => props.width};

@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import theme from '../../theme';
 import { FONT_SIZE, FONT_WEIGHT } from '../../constants/size';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   ${theme.ALIGN.COLUMN_CENTER};
   padding: ${props => props.padding};
   width: ${props => props.width};
@@ -22,7 +23,7 @@ const Container = styled.div`
   }
 `;
 
-const ImageWrapper = styled.div`
+const ImageWrapper = styled(motion.div)`
   width: ${props => props.width};
   height: ${props => props.height};
   padding: 10px;
@@ -36,7 +37,7 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const Introduce = styled.div`
+const Introduce = styled(motion.div)`
   ${theme.ALIGN.COLUMN_CENTER}
   position: absolute;
   width: ${props => props.width};

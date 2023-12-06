@@ -26,7 +26,7 @@ const Home = () => {
       </IntroduceBox>
 
       <IntroduceBox>
-        <h1>총 n개의 파트 팀으로 구성</h1>
+        <h1>총 6개의 파트로 구성</h1>
         <p>2023년 하반기 기준</p>
         <PartIntro />
       </IntroduceBox>
