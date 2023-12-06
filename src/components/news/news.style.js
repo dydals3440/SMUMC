@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from '../../theme';
 import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
+import { FONT } from '../../constants/font';
 const Container = styled.div`
   ${theme.ALIGN.ROW_CENTER};
 `;
@@ -42,6 +43,7 @@ const Contents = styled.div`
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     ${theme.ALIGN.COLUMN_CENTER}
     padding: 0%;
+    height: 500px;
   }
 `;
 
@@ -63,7 +65,8 @@ const TextBox = styled.div`
     }
 
     h3 {
-      font-size: ${FONT_SIZE.SM};
+      font-family: ${FONT.IBM_PLEX_SANS_KR.LIGHT};
+      font-size: ${FONT_SIZE.XS};
     }
   }
 `;
