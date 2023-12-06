@@ -3,7 +3,6 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import { Footer, Navbar, Sidebar } from '../../components';
 import theme from '../../theme';
 import { BROWSER_PATH } from '../../constants/path';
-import MembersImgUrl from '../../assets/img/members.webp';
 import {
   clickMemberActive,
   clickMemberAll
@@ -19,7 +18,6 @@ const MembersLayout = () => {
   return (
     <S.Wrapper>
       <Navbar />
-      {/* <S.ImgBanner src={MembersImgUrl} /> */}
       <S.TabContainer>
         <S.TabButton
           onClick={() => {
@@ -29,7 +27,7 @@ const MembersLayout = () => {
           }}
           color={
             isClicked
-              ? `${theme.MAIN_COLOR.TITLE}`
+              ? `${theme.COLOR.LIGHT.WHITE}`
               : `${theme.COLOR.DARK.LIGHT_GRAY}`
           }
         >
@@ -44,7 +42,7 @@ const MembersLayout = () => {
           color={
             isClicked
               ? `${theme.COLOR.DARK.LIGHT_GRAY}`
-              : `${theme.MAIN_COLOR.TITLE}`
+              : `${theme.COLOR.LIGHT.WHITE}`
           }
         >
           Member List
