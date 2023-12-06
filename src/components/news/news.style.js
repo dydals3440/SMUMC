@@ -59,6 +59,7 @@ const TextBox = styled.div`
   }
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     ${theme.ALIGN.COLUMN_CENTER};
+    height: 40%;
     h2 {
       font-size: ${FONT_SIZE.LG};
       position: relative;
@@ -81,8 +82,9 @@ const Img = styled.img`
 
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     width: 100%;
-    height: 70%;
-    border-radius: 30px 30px 30px 30px;
+    height: 60%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
   }
 `;
 
