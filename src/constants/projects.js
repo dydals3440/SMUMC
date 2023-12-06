@@ -1,7 +1,7 @@
 const PROJECTS = [
   {
     id: 1,
-    name: "가치더치(TogeDutch)'",
+    name: '가치더치(TogeDutch)',
     description: '부담스러운 배달 최소 금액 + 배달 팁 공유 서비스',
     theme: ['ANDROID', 'SPRING'],
     github: 'https://github.com/UMC-TogeDutch-Project',

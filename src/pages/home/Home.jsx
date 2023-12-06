@@ -9,7 +9,10 @@ import {
   InfiniteSlider
 } from '../../components';
 
+import { MEMBERS } from '../../constants/members';
+
 const Home = () => {
+  console.log(MEMBERS.length());
   return (
     <S.Container>
       <HeroBox />
@@ -19,7 +22,7 @@ const Home = () => {
           University MakeUs Challendge(UMC-SMU)는 상명대학교 코딩 동아리입니다.
         </p>
         <S.Wrapper>
-          <CountUpCard title='역대 SMUMC 멤버수' endNum='185' lastUnit='명' />
+          <CountUpCard title='역대 SMUMC 멤버수' endNum='180' lastUnit='명' />
           <CountUpCard title='현재 회원 수' endNum='40' lastUnit='명' />
           <CountUpCard title='현재 기수' endNum='4' lastUnit='기' />
         </S.Wrapper>

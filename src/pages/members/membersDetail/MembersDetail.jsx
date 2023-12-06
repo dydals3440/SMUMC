@@ -6,6 +6,7 @@ import Button from '../../../components/button/Button';
 import { MEMBERS } from '../../../constants/members';
 import DEFAULT_FEMALE_IMAGE from '../../../assets/img/DEFAULT_FEMALE.webp';
 import DEFAULT_MALE_IMAGE from '../../../assets/img/DEFAULT_MALE.webp';
+import theme from '../../../theme';
 
 const MembersDetail = () => {
   const [userData, setUserData] = useState({});
@@ -20,8 +21,8 @@ const MembersDetail = () => {
   return (
     <S.Container>
       <S.RowContainer>
-        <p>구성원</p>
-        <p>{'>'}</p>
+        <S.PartText>구성원</S.PartText>
+        <S.PartText>{'>'}</S.PartText>
         <h3>{name}</h3>
       </S.RowContainer>
       <S.ColumnContainer>
@@ -33,7 +34,12 @@ const MembersDetail = () => {
         <h5>{part}</h5>
         <S.RowContainer>
           {skill?.map(item => (
-            <Button size='s' disabled={true}>
+            <Button
+              size='s'
+              disabled={true}
+              background={theme.COLOR.LIGHT.YELLOW}
+              fontcolor={theme.COLOR.DARK.NAVY}
+            >
               {item}
             </Button>
           ))}

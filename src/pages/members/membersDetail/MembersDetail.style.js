@@ -19,6 +19,7 @@ const Container = styled.div`
   flex-direction: column;
   padding: 50px;
   width: 100%;
+  height: 100vh;
   gap: 35px;
   animation: ${fadeInUp} 0.7s ease-in-out;
 `;
@@ -28,11 +29,6 @@ const RowContainer = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  p {
-    display: flex;
-    color: ${theme.COLOR.DARK.LIGHT_LIGHT_GRAY};
-    font-family: ${FONT.IBM_PLEX_SANS_KR.REGULAR};
-  }
 
   h3 {
     display: flex;
@@ -88,6 +84,12 @@ const GitChartImg = styled.img`
 
 const MemberProjectContainer = styled.div``;
 
+const PartText = styled.p`
+  display: flex;
+  color: ${theme.COLOR.LIGHT.WHITE};
+  font-family: ${FONT.IBM_PLEX_SANS_KR.REGULAR};
+`;
+
 export {
   Container,
   RowContainer,
@@ -95,5 +97,6 @@ export {
   MemberImg,
   GitChartImg,
   MemberProjectContainer,
-  ColumnCenterContainer
+  ColumnCenterContainer,
+  PartText
 };
