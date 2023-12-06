@@ -4,17 +4,8 @@
 }
 
 body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  position: absolute;
 }
-
-/* #root {
-  width: 100%;
-}
-
-#app {
-  height: 100vh;
-} */
 
 @font-face {
   font-family: 'IBMPlexSansKR-Light';
