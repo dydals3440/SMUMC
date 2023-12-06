@@ -49,6 +49,13 @@ const LinkBox = styled.div`
   display: flex;
   flex-direction: row;
   gap: 30px;
+
+  svg {
+    &:hover {
+      transform: scale(1.1);
+      color: ${theme.COLOR.LIGHT.YELLOW};
+    }
+  }
 `;
 
 const CreatorName = styled.p`

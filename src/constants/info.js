@@ -26,7 +26,7 @@ const NEWS_INFOS = [
     title: '5th UMC iOS Conference',
     description:
       'iOS를 같이 공부하고 있는 사람들의 이야기도 들으며 행사에 참여한 다른 챌린저들과 의미 있는 시간을 가져볼 수 있으면 좋겠습니다.',
-    image: '/images/workshop.webp'
+    image: '/images/conference.webp'
   }
 ];
 

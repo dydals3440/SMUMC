@@ -11,14 +11,6 @@ const ContentBox = styled.div`
   background-color: ${theme.COLOR.DARK.BLACK};
   width: 100%;
 
-  h2 {
-    margin: 0;
-  }
-
-  h3 {
-    margin: 0;
-  }
-
   @media (max-width: ${parseInt(RESPONSIVE_SIZE.PC) + 100}px) {
     ${theme.ALIGN.COLUMN_CENTER};
   }
@@ -34,12 +26,13 @@ const Contents = styled.div`
 
   h2 {
     font-size: ${FONT_SIZE.FOUR_XL};
+    border-bottom: 1px solid ${theme.COLOR.LIGHT.WHITE_GRAY};
+    margin: 15px 0;
   }
 
-  h2,
   h3 {
-    top: 100px;
     color: ${theme.COLOR.LIGHT.WHITE_GRAY};
+    font-size: ${FONT_SIZE.SM};
   }
 
   @media (max-width: ${parseInt(RESPONSIVE_SIZE.PC) + 100}px) {
@@ -55,6 +48,7 @@ const Contents = styled.div`
 const TextBox = styled.div`
   margin: auto;
   padding: 20px;
+  height: 30%;
 
   @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
     h2 {
@@ -65,6 +59,7 @@ const TextBox = styled.div`
     ${theme.ALIGN.COLUMN_CENTER};
     h2 {
       font-size: ${FONT_SIZE.LG};
+      position: relative;
     }
 
     h3 {
@@ -74,7 +69,9 @@ const TextBox = styled.div`
 `;
 
 const Img = styled.img`
-  border-radius: 30px 30px 30px 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+
   width: 100%;
   height: 70%;
   object-fit: cover;
