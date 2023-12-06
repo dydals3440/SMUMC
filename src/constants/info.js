@@ -13,13 +13,13 @@ const NEWS_INFOS = [
     id: 1,
     title: '뉴스 제목1',
     description: '뉴스 내용1',
-    image: '/public/images/contest.webp'
+    image: '/images/contest.webp'
   },
   {
     id: 2,
     title: '뉴스 제목2',
     description: '뉴스 내용 2',
-    image: '/public/images/workshop.webp'
+    image: '/images/workshop.webp'
   }
 ];
 
