@@ -1404,18 +1404,6 @@ const MEMBERS = [
     skill: ['Kotlin']
   },
   {
-    id: 118,
-    year: 5,
-    nickname: '에디',
-    name: '김보성',
-    part: 'ANDROID',
-    position: '챌린저',
-    github: 'BOSEONG000126',
-    sex: 'm',
-    project: null,
-    skill: ['Kotlin']
-  },
-  {
     id: 119,
     year: 5,
     nickname: '딩동',
@@ -1615,18 +1603,6 @@ const MEMBERS = [
     part: 'SPRING',
     position: '챌린저',
     github: 'Byun-Sung-Ho',
-    sex: 'm',
-    project: null,
-    skill: ['Java', 'Spring']
-  },
-  {
-    id: 136,
-    year: 5,
-    nickname: '케빈',
-    name: '심규빈',
-    part: 'SPRING',
-    position: '챌린저',
-    github: 'SIM-GYUBIN',
     sex: 'm',
     project: null,
     skill: ['Java', 'Spring']
