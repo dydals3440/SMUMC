@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from '../../theme';
 import { FONT } from '../../constants/font';
+import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 
 const Wrapper = styled.div`
   ${theme.ALIGN.COLUMN_CENTER}
@@ -10,14 +11,27 @@ const Wrapper = styled.div`
 
   h1 {
     font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
-    border: 1px solid black;
+    font-size: ${FONT_SIZE.FIVE_XL};
+    color: ${theme.COLOR.LIGHT.WHITE};
     width: 80%;
     text-align: center;
     margin: 20px;
     padding: 30px;
-    border-radius: 20px;
-    background-color: ${theme.COLOR.PRIMARY.BLUE_LIGHT};
   }
 `;
 
-export { Wrapper };
+const CalendarText = styled.p`
+  font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
+  font-size: ${FONT_SIZE.FIVE_XL};
+  color: ${theme.COLOR.LIGHT.WHITE};
+  width: 80%;
+  text-align: center;
+  margin: 20px;
+  padding: 30px;
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    display: none;
+  }
+`;
+
+export { Wrapper, CalendarText };

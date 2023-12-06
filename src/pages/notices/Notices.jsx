@@ -17,7 +17,7 @@ const Notices = () => {
   };
   return (
     <S.Wrapper>
-      <h1>UMC 일정안내</h1>
+      <S.CalendarText>UMC 일정안내</S.CalendarText>
       <Calendar
         startingDate={new Date()}
         eventsArr={events}

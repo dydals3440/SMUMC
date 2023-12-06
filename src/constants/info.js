@@ -4,8 +4,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 const FOOTER_INFOS = [
   { icon: EmailIcon, text: 'dydals3440@gmail.com' },
-  { icon: LocationOnIcon, text: '서울특별시 종로구 홍지문2길 20 상명대학교' },
-  { icon: LocalPhoneIcon, text: '02-xxx-xxxx' }
+  { icon: LocationOnIcon, text: '서울특별시 종로구 홍지문2길 20 상명대학교' }
 ];
 
 const NEWS_INFOS = [
@@ -37,11 +36,6 @@ const FAQS_TEXT = [
       '실제로, 처음 UMC에서 학습하더라도, 스터디와, 개인 공부를 꾸준히하여 성장해서 데모데이때 뛰어난 성과를 내신 선배기수분들이 다수 계십니다!! 하지만 그래도 열심히 학습하셔야겠죠?'
   },
   {
-    question: 'UMC에 지원할려면 필요한 조건이 있나요?',
-    answer:
-      '없습니다. 열심히 끝까지 함께하고자 하는 의지만 있으시면 누구나 지원하실 수 있습니다.'
-  },
-  {
     question: '스터디는 어떤 방식으로, 몇시간 정도 진행되는지 알고 싶습니다!',
     answer:
       '팀별로, 다르기 떄문에 정확하게 말씀드리기는 어렵지만, 평균적으로 주에 1시간정도 스터디를 진행한 후, 중앙에서 주어지는 워크북을 해결하며 진행합니다.'
@@ -64,7 +58,7 @@ const FAQS_TEXT = [
     question:
       '합격해도, 제가 커리큘럼을 잘 따라갈 수 있을지 걱정됩니다, 데모데이때 피해를 주지 않을까 걱정됩니다.',
     answer:
-      '걱정하시지 마시고, 열심히 활동하시면 충분히 따라오실 수 있습니다. 이 웹사이트도, 처음 활동하신 분들이 같이 함께 참여하셔서 만드셨습니다..ㅎㅎ'
+      '걱정하시지 마시고, 열심히 활동하시면 충분히 따라오실 수 있습니다. 이 웹사이트도, 처음 활동하신 분들이 같이 함께 참여하셔서 만드셨습니다^ㅡ^       -지환'
   }
 ];
 

@@ -20,14 +20,14 @@ const Accordions = styled.div`
 `;
 
 const Item = styled.div`
-  background-color: ${theme.COLOR.LIGHT.BEIGE};
+  background-color: ${theme.COLOR.PRIMARY.BLUE_SECONDARY};
   margin-bottom: 5px;
   padding: 30px 40px;
   border-radius: 10px;
 `;
 
 const Title = styled.div`
-  color: ${theme.COLOR.DARK.BROWN};
+  color: ${theme.COLOR.DARK.GRAY};
   ${theme.ALIGN.ROW_CENTER};
   justify-content: space-between;
 
@@ -43,7 +43,7 @@ const Title = styled.div`
 `;
 
 const Content = styled.div`
-  color: ${theme.COLOR.DARK.BEIGE_BROWN};
+  color: ${theme.COLOR.DARK.LIGHT_GRAY};
   max-height: ${props => (props.show ? '9999px' : '0')};
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);

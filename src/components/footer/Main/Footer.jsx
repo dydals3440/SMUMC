@@ -5,11 +5,18 @@ import { Link } from 'react-router-dom';
 import { FOOTER_INFOS } from '../../../constants/info';
 import ForumIcon from '@mui/icons-material/Forum';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { NAME } from '../../../constants/developer';
 
 const Footer = () => {
   return (
     <S.FooterWrapper>
       <S.InfoBox>
+        <S.CreatorNameContainer>
+          <S.CreatorName>made by</S.CreatorName>
+          {NAME.map(({ name, id }, index) => (
+            <p key={id}>{name}</p>
+          ))}
+        </S.CreatorNameContainer>
         {FOOTER_INFOS.map(({ icon, text }, i) => {
           return (
             <S.DetailInfo key={i}>

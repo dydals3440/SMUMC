@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 import theme from '../../theme';
-import { FONT_SIZE } from '../../constants/size';
+import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 import { FONT } from '../../constants/font';
 
 const Wrapper = styled.div`
   background-color: ${theme.COLOR.DARK.NAVY};
-  border-radius: 20px;
   width: 100%;
 
-  border: 1px solid black;
   height: 90%;
   margin: 5px;
   padding: 20px;
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    display: none;
+  }
 `;
 
 const CalendarHead = styled.span`

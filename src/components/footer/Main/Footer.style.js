@@ -51,4 +51,25 @@ const LinkBox = styled.div`
   gap: 30px;
 `;
 
-export { FooterWrapper, InfoBox, Icon, DetailInfo, SocialBox, LinkBox };
+const CreatorName = styled.p`
+  font-size: ${FONT_SIZE.XL};
+  color: ${theme.COLOR.LIGHT.WHITE};
+  font-family: ${FONT.IBM_PLEX_SANS_KR.MEDIUM};
+`;
+
+const CreatorNameContainer = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+`;
+
+export {
+  FooterWrapper,
+  InfoBox,
+  Icon,
+  DetailInfo,
+  SocialBox,
+  LinkBox,
+  CreatorName,
+  CreatorNameContainer
+};
