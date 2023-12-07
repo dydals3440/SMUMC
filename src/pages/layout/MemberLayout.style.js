@@ -31,8 +31,6 @@ const TabContainer = styled.div`
 
   @media ${theme.WINDOW_SIZE.MOBILE} {
     gap: 0;
-    margin-top: 300px;
-    padding: 0 20px;
   }
 `;
 
