@@ -43,6 +43,7 @@ const DetailInfo = styled.li`
   ${theme.ALIGN.ROW_CENTER};
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     font-size: ${FONT_SIZE.XS};
+    white-space: nowrap;
   }
 `;
 
@@ -86,6 +87,7 @@ const CreatorNameContainer = styled.div`
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
     font-size: ${FONT_SIZE.XS};
+    white-space: nowrap;
   }
 `;
 
