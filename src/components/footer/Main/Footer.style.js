@@ -18,6 +18,10 @@ const FooterWrapper = styled.footer`
   color: ${theme.COLOR.LIGHT.WHITE_GRAY};
   font-size: ${FONT_SIZE.FOUR_XL};
 
+  @media (max-width: ${RESPONSIVE_SIZE.TABLET}) {
+    ${theme.ALIGN.COLUMN_CENTER};
+  }
+
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     ${theme.ALIGN.COLUMN_CENTER};
   }
@@ -33,7 +37,6 @@ const InfoBox = styled.ul`
 `;
 
 const DetailInfo = styled.li`
-  width: 500px;
   padding: 5px 0;
   gap: 10px;
 
@@ -63,9 +66,9 @@ const LinkBox = styled.div`
 `;
 
 const CreatorName = styled.p`
-  font-size: ${FONT_SIZE.XL};
   color: ${theme.COLOR.LIGHT.WHITE};
-  font-family: ${FONT.IBM_PLEX_SANS_KR.MEDIUM};
+  font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
+  font-size: ${FONT_SIZE.XS};
 
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
@@ -77,6 +80,8 @@ const CreatorNameContainer = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
+  font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
+  font-size: ${FONT_SIZE.XS};
 
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
