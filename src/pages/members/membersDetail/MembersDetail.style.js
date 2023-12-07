@@ -20,7 +20,7 @@ const Container = styled.div`
   flex-direction: column;
   padding: 50px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   gap: 35px;
   animation: ${fadeInUp} 0.7s ease-in-out;
 `;
