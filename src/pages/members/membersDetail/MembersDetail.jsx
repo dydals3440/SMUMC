@@ -18,7 +18,10 @@ const MembersDetail = () => {
     setUserData(user || {});
   }, []);
 
-  const githubStyle = useMemo(() => ({ color: 'white' }), []);
+  const githubStyle = useMemo(
+    () => ({ color: 'white', margin: '100px 0' }),
+    []
+  );
 
   return (
     <S.Container>

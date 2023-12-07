@@ -69,9 +69,7 @@ const MemberImg = styled.img`
   border-radius: 10px;
 `;
 
-const GitChartImg = styled(GitHubCalendar)`
-  color: white;
-`;
+const GitChartImg = styled(GitHubCalendar)``;
 
 const MemberProjectContainer = styled.div``;
 

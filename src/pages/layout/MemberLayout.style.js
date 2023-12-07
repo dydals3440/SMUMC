@@ -31,7 +31,7 @@ const TabContainer = styled.div`
 
   @media ${theme.WINDOW_SIZE.MOBILE} {
     gap: 0;
-    margin-top: 200px;
+    margin-top: 300px;
     padding: 0 20px;
   }
 `;
@@ -47,6 +47,7 @@ const TabButton = styled.button`
 
   @media ${theme.WINDOW_SIZE.MOBILE} {
     font-size: ${FONT_SIZE.THREE_XL};
+    margin: 0 10px;
   }
 `;
 
