@@ -1,5 +1,5 @@
 [build]
-    command = "vite build"
+    command = "yarn build"
     publish = "build"
 [[redirects]]
     from = "/*"
