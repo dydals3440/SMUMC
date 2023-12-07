@@ -22,7 +22,7 @@ const Home = () => {
       <IntroduceBox>
         <h1>About us</h1>
         <p>University MakeUs Challendge(UMC-SMU)는</p>
-        <p>상명대학교 코딩 동아리입니다.</p>
+        <p>앱&웹 서비스 런칭에 도전하는 대학생 IT 연합동아리입니다</p>
         <S.Wrapper>
           <CountUpCard
             title='역대 SMUMC 멤버수'
@@ -46,8 +46,8 @@ const Home = () => {
 
       <IntroduceBox>
         <h1>PROJECT</h1>
-        <p>University MakeUs Challenge(UMC-SMU)는</p>
-        <p>상명대학교 대학교 동아리 입니다.</p>
+        <p>University MakeUs Challenge(SMUMC) 데모데이</p>
+        <p>실제로 상명대 학생이 참여한 데모데이 프로젝트입니다.</p>
         <InfiniteSlider />
       </IntroduceBox>
 

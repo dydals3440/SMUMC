@@ -44,6 +44,10 @@ const TabButton = styled.button`
   border: 0;
   background-color: transparent;
   cursor: pointer;
+
+  @media ${theme.WINDOW_SIZE.MOBILE} {
+    font-size: ${FONT_SIZE.THREE_XL};
+  }
 `;
 
 export { Wrapper, ImgBanner, TabContainer, TabButton };

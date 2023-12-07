@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import theme from '../../../theme';
 import { FONT } from '../../../constants/font';
 import { FONT_SIZE } from '../../../constants/size';
+import GitHubCalendar from 'react-github-calendar';
 
 const fadeInUp = keyframes`
   0% {
@@ -68,18 +69,8 @@ const MemberImg = styled.img`
   border-radius: 10px;
 `;
 
-const GitChartImg = styled.img`
-  width: 750px;
-  padding: 20px;
-  margin: 30px 0;
-
-  @media ${theme.WINDOW_SIZE.TABLET} {
-    display: none;
-  }
-
-  @media ${theme.WINDOW_SIZE.MOBILE} {
-    display: none;
-  }
+const GitChartImg = styled(GitHubCalendar)`
+  color: white;
 `;
 
 const MemberProjectContainer = styled.div``;

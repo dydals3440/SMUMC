@@ -34,6 +34,14 @@ const Banner = styled.div`
     padding: 20px;
     text-align: center;
   }
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    h2 {
+      margin-top: 25px;
+      padding: 0;
+      font-size: ${FONT_SIZE.LG};
+    }
+  }
 `;
 
 const Wrapper = styled.div`

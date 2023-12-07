@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import * as S from './MembersDetail.style';
@@ -17,6 +17,8 @@ const MembersDetail = () => {
     const user = MEMBERS.find(members => members.id === parseInt(id));
     setUserData(user || {});
   }, []);
+
+  const githubStyle = useMemo(() => ({ color: 'white' }), []);
 
   return (
     <S.Container>
@@ -50,7 +52,12 @@ const MembersDetail = () => {
           src={sex === 'w' ? DEFAULT_FEMALE_IMAGE : DEFAULT_MALE_IMAGE}
         />
         {github && (
-          <S.GitChartImg src={`https://ghchart.rshah.org/${github}`} />
+          <S.GitChartImg
+            username={github}
+            colorScheme='light'
+            year='last'
+            style={githubStyle}
+          />
         )}
       </S.ColumnCenterContainer>
       {/* <S.ColumnContainer>
