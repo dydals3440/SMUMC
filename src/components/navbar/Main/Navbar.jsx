@@ -15,14 +15,9 @@ const Navbar = () => {
     dispatch(sidebarOpen());
   };
 
-  initialState = {isDarkMode : true}
-
- const isDark =  useSelector((state) => state.darkMode)
-
-
   return (
     <S.NavWrapper isShow={y < 100 ? true : false}>
-      <button/>
+      <button />
       <S.LinkHome to={BROWSER_PATH.BASE}>SMUMC</S.LinkHome>
       <S.NavMenuWrapper>
         <S.LinkMenu to={BROWSER_PATH.PROJECTS.BASE}>PROJECTS</S.LinkMenu>
