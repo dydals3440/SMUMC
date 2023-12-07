@@ -62,8 +62,9 @@ const PaginationStyle = styled(Pagination)`
   border-radius: 30px;
 
   @media ${theme.WINDOW_SIZE.MOBILE} {
-    width: 100%;
+    width: 110%;
     padding: 0;
+    ${theme.ALIGN.COLUMN_CENTER};
   }
 `;
 
