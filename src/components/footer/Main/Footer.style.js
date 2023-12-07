@@ -19,7 +19,7 @@ const FooterWrapper = styled.footer`
   font-size: ${FONT_SIZE.FOUR_XL};
 
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
-    ${theme.ALIGN.COLUMN_CENTER}
+    ${theme.ALIGN.COLUMN_CENTER};
   }
 `;
 
@@ -38,6 +38,9 @@ const DetailInfo = styled.li`
   gap: 10px;
 
   ${theme.ALIGN.ROW_CENTER};
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    font-size: ${FONT_SIZE.XS};
+  }
 `;
 
 const Icon = styled(SvgIcon)`
@@ -63,12 +66,22 @@ const CreatorName = styled.p`
   font-size: ${FONT_SIZE.XL};
   color: ${theme.COLOR.LIGHT.WHITE};
   font-family: ${FONT.IBM_PLEX_SANS_KR.MEDIUM};
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
+    font-size: ${FONT_SIZE.XS};
+  }
 `;
 
 const CreatorNameContainer = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
+
+  @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
+    font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
+    font-size: ${FONT_SIZE.XS};
+  }
 `;
 
 export {

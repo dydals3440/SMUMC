@@ -60,6 +60,11 @@ const PaginationStyle = styled(Pagination)`
   background-color: ${theme.COLOR.LIGHT.WHITE};
   padding: 5px;
   border-radius: 30px;
+
+  @media ${theme.WINDOW_SIZE.MOBILE} {
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 export {
