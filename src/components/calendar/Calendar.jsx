@@ -10,6 +10,7 @@ import {
   getDateObj,
   getDaysInMonth,
   getRandomDateColor,
+  getSortedDays,
   range
 } from '../../utils/date';
 
@@ -49,7 +50,7 @@ const Calendar = ({ startingDate, eventsArr, addEvent }) => {
       </S.CalendarHead>
 
       <S.SevenColGrid>
-        {DAYS.map(day => (
+        {getSortedDays(currentMonth, currentYear).map(day => (
           <S.HeadDay>{day}</S.HeadDay>
         ))}
       </S.SevenColGrid>
