@@ -19,6 +19,7 @@
 <!-- 추후 배포 링크 추가 예정입니다. -->
 
 [💻 SMUMC 소개 페이지 사용해보기](netlify 링크)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/697c6bf2-dcaa-4992-8144-e73fab80dc83/deploy-status)](https://app.netlify.com/sites/incomparable-manatee-9615cd/deploys)
 
 ---
 
