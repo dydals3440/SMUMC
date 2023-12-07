@@ -10,7 +10,7 @@ function counter(setCount, start, end) {
     }
     const step = (end - start) / 20;
     now += step;
-  }, 50);
+  }, 300);
 }
 
 const CountUpCard = ({ title, endNum, startNum = 0, firstUnit, lastUnit }) => {
