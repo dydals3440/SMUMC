@@ -10,8 +10,8 @@ import drawSnow from '../../hooks/drawSnow';
 
 const MainLayout = () => {
   const { isOpen } = useSelector(state => state.sidebar);
-  const height = '3000';
-  const width = document.documentElement.scrollWidth;
+  const height = window.innerHeight + 1600;
+  const width = window.innerWidth;
 
   return (
     <S.Wrapper>

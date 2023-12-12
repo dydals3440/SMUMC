@@ -9,6 +9,7 @@ const FooterWrapper = styled.footer`
   bottom: 0;
   height: 150px;
   padding: 0 80px;
+
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
   background-color: ${theme.COLOR.DARK.GRAY};
 

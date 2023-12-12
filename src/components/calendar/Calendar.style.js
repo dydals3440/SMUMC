@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   background-color: ${theme.COLOR.DARK.NAVY};
   width: 100%;
 
-  height: 90%;
+  height: 100%;
   margin: 5px;
   padding: 20px;
 

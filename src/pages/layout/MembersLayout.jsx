@@ -8,16 +8,30 @@ import {
   clickMemberAll
 } from '../../redux/slices/memberTabSlice';
 import { useSelector, useDispatch } from 'react-redux';
+import drawSnow from '../../hooks/drawSnow';
+import Confetti from 'react-confetti';
 
 const MembersLayout = () => {
   const { isOpen } = useSelector(state => state.sidebar);
   const navigate = useNavigate();
   const isClicked = useSelector(state => state.memberTab.isClicked);
   const dispatch = useDispatch();
+  const height = window.innerHeight + 1600;
+  const width = window.innerWidth;
 
   return (
     <S.Wrapper>
       <Navbar />
+      <Confetti
+        wind={0.01}
+        width={width}
+        height={height}
+        opacity={0.6}
+        drawShape={drawSnow}
+        tweenDuration={8000}
+        numberOfPieces={200}
+        gravity={0.05}
+      />
       <S.TabContainer>
         <S.TabButton
           onClick={() => {
