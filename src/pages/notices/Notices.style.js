@@ -5,11 +5,11 @@ import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 
 const Wrapper = styled.div`
   ${theme.ALIGN.COLUMN_CENTER}
-  margin-top: 100px;
+  height: 100%;
   background: ${theme.COLOR.DARK.NAVY};
-  width: 100%;
 
   h1 {
+    margin-top: 200px;
     font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
     font-size: ${FONT_SIZE.FIVE_XL};
     color: ${theme.COLOR.LIGHT.WHITE};
@@ -32,6 +32,7 @@ const CalendarText = styled.p`
   width: 80%;
   text-align: center;
   margin: 20px;
+  margin-top: 200px;
   padding: 30px;
 
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {

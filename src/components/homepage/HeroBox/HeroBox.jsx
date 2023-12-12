@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import * as S from '../HeroBox/HeroBox.style';
 
 const HeroBox = () => {
+  const navigate = useNavigate();
+
   return (
     <S.Hero>
       <S.Wrapper>
@@ -9,9 +12,13 @@ const HeroBox = () => {
         <h1>CHALLENGE</h1>
         <p> 상명대학교 코딩 동아리</p>
         <S.ApplyWrapper>
-          <S.Button>5기 지원 마감</S.Button>
+          <S.Button
+            onClick={() => window.open('https://forms.gle/obd8mfEppcZDP7yv5')}
+          >
+            🎄 플젝 인원 모집 🎄
+          </S.Button>
           <p>
-            2024년 초, 6기 모집 예정입니다. 자세한 일정은 NOTICES를 참고하세요.
+            {/* 2024년 초, 6기 모집 예정입니다. 자세한 일정은 NOTICES를 참고하세요. */}
           </p>
         </S.ApplyWrapper>
       </S.Wrapper>
