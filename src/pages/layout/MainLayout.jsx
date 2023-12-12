@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useWindowSize } from 'react-use';
+
 import { Outlet } from 'react-router-dom';
 import { Footer, Navbar, Sidebar } from '../../components';
 import { useSelector } from 'react-redux';
@@ -10,13 +12,13 @@ import drawSnow from '../../hooks/drawSnow';
 
 const MainLayout = () => {
   const { isOpen } = useSelector(state => state.sidebar);
-  const height = window.innerHeight + 1600;
-  const width = window.innerWidth;
+  // const width = window.innerWidth;
+  // const height = document.body.scrollHeight;
+  const { width, height } = useWindowSize();
 
   return (
     <S.Wrapper>
       <Confetti
-        wind={0.01}
         width={width}
         height={height}
         opacity={0.6}

@@ -5,7 +5,7 @@ import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 
 const Wrapper = styled.div`
   ${theme.ALIGN.COLUMN_CENTER}
-  height: 100%;
+
   background: ${theme.COLOR.DARK.NAVY};
 
   h1 {
@@ -19,6 +19,9 @@ const Wrapper = styled.div`
 
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     padding: 20px;
+    height: 100dvh;
+    width: 100%;
+
     h1 {
       font-size: ${FONT_SIZE.THREE_XL};
     }
