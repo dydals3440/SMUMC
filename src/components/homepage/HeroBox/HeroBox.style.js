@@ -52,6 +52,7 @@ const shakeAnimation = keyframes`
 `;
 
 const Button = styled.button`
+  ${theme.ALIGN.COLUMN_CENTER};
   width: 180px;
   height: 50px;
   border-radius: 20px;
