@@ -7,15 +7,17 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   ${theme.ALIGN.COLUMN_CENTER};
-  background-color: ${theme.COLOR.DARK.NAVY};
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.NAVY : theme.COLOR.LIGHT.WHITE};
 `;
 
 const Banner = styled.div`
   width: 100%;
-  background-color: ${theme.COLOR.DARK.NAVY};
-  margin: 100px 0;
+  margin-top: 130px;
+  margin-bottom: 50px;
   ${theme.ALIGN.COLUMN_CENTER}
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   img {
     object-fit: cover;
     height: 250px;

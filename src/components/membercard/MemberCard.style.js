@@ -8,9 +8,9 @@ const Container = styled(motion.div)`
   padding: ${props => props.padding};
   width: ${props => props.width};
   height: ${props => props.height};
-  background: ${theme.COLOR.LIGHT.WHITE};
+  background: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.LIGHT.WHITE_GRAY};
   border-radius: 20px;
-  background: ${props => props.background};
   font-weight: ${props => props.fontweight};
   cursor: pointer;
 

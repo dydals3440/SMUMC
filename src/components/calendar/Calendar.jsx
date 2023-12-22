@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import SvgIcon from '@mui/material/SvgIcon';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -18,6 +19,7 @@ const Calendar = ({ startingDate, eventsArr, addEvent }) => {
   const [currentMonth, setCurrentMonth] = useState(startingDate.getMonth());
   const [currentYear, setCurrentYear] = useState(startingDate.getFullYear());
   const DAYS_IN_A_MONTH = getDaysInMonth(currentMonth, currentYear);
+  const darkMode = useSelector(state => state.darkMode);
 
   const nextMonth = () => {
     if (currentMonth < 11) {
@@ -40,8 +42,8 @@ const Calendar = ({ startingDate, eventsArr, addEvent }) => {
     addEvent(date, getRandomDateColor());
   };
   return (
-    <S.Wrapper>
-      <S.CalendarHead>
+    <S.Wrapper darkMode={darkMode}>
+      <S.CalendarHead darkMode={darkMode}>
         <SvgIcon component={ArrowBackIcon} onClick={prevMonth} />
         <p>
           {MONTHS[currentMonth]} {currentYear}
@@ -54,9 +56,10 @@ const Calendar = ({ startingDate, eventsArr, addEvent }) => {
           <S.HeadDay>{day}</S.HeadDay>
         ))}
       </S.SevenColGrid>
-      <S.CalendarBody fourCol={DAYS_IN_A_MONTH === 28}>
+      <S.CalendarBody darkMode={darkMode} fourCol={DAYS_IN_A_MONTH === 28}>
         {range(DAYS_IN_A_MONTH).map(day => (
           <S.StyleDay
+            darkMode={darkMode}
             onClick={() =>
               onAddEvent(getDateObj(day, currentMonth, currentYear))
             }

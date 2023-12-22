@@ -3,9 +3,11 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import * as S from './partIntro.style';
+import { useSelector } from 'react-redux';
 
 function PartIntro() {
   const [selectedPart, setSelectedPart] = useState({ part: '기획' });
+  const darkMode = useSelector(state => state.darkMode);
 
   const transition = {
     duration: 0.8,
@@ -29,7 +31,7 @@ function PartIntro() {
   return (
     <S.Container>
       <S.PartBox>
-        <S.PartNav>
+        <S.PartNav darkMode={darkMode}>
           {PART_INFOS.map(info => (
             <S.CategoryBox
               key={info.part}

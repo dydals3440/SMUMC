@@ -6,8 +6,12 @@ import { FONT } from '../../constants/font';
 const Wrapper = styled.div`
   ${theme.ALIGN.COLUMN_CENTER};
   width: 100%;
-  background-color: ${theme.COLOR.DARK.NAVY};
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.NAVY : theme.COLOR.LIGHT.WHITE};
   height: 100%;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 `;
 
 const ImgBanner = styled.img`

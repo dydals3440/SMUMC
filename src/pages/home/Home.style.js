@@ -9,7 +9,8 @@ const Container = styled.div`
   width: calc(100vw - (100vw - 100%));
 
   padding-bottom: 150px;
-  background-color: black;
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.BLACK : theme.COLOR.LIGHT.WHITE};
 
   h1 {
     font-size: ${FONT_SIZE.SIX_XL};
@@ -28,6 +29,9 @@ const Container = styled.div`
       font-size: ${FONT_SIZE.SM};
     }
   }
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 `;
 const Wrapper = styled.div`
   gap: 40px;

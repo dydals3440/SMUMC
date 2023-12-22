@@ -4,7 +4,8 @@ import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 import { FONT } from '../../constants/font';
 
 const Wrapper = styled.div`
-  background-color: ${theme.COLOR.DARK.NAVY};
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.NAVY : theme.COLOR.LIGHT.WHITE};
   width: 100%;
 
   height: 100%;
@@ -14,6 +15,9 @@ const Wrapper = styled.div`
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     display: none;
   }
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 `;
 
 const CalendarHead = styled.span`
@@ -23,7 +27,8 @@ const CalendarHead = styled.span`
   justify-content: space-around;
   font-size: 45px;
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
 
   margin-bottom: 20px;
 
@@ -64,11 +69,15 @@ const CalendarBody = styled.div`
   grid-template-rows: repeat(${({ fourCol }) => (fourCol ? 4 : 5)}, 1fr);
   font-family: ${FONT.IBM_PLEX_SANS_KR.SEMI_BOLD};
   color: ${theme.COLOR.LIGHT.WHITE};
-  border: 1px solid white;
+  border: 1px solid
+    ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
 `;
 
 const StyleDay = styled.span`
-  border: 0.8px solid;
+  border: 0.8px solid
+    ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   text-align: right;
   padding: 10px;
   ${({ active }) =>

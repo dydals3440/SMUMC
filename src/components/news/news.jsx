@@ -1,12 +1,14 @@
+import { useSelector } from 'react-redux';
 import { NEWS_INFOS } from '../../constants/info';
 import * as S from './news.style';
 
 function News() {
+  const darkMode = useSelector(state => state.darkMode);
   return (
     <S.Container>
-      <S.ContentBox>
+      <S.ContentBox darkMode={darkMode}>
         {NEWS_INFOS.map(({ id, title, description, image }) => (
-          <S.Contents key={id}>
+          <S.Contents darkMode={darkMode} key={id}>
             <S.Img src={image} alt={title} />
             <S.TextBox>
               <h2>{title}</h2>

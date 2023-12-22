@@ -52,7 +52,10 @@ const FormControlStyle = styled(FormControl)`
 `;
 
 const SelectStyle = styled(Select)`
-  color: ${theme.COLOR.LIGHT.WHITE} !important;
+  color: ${props =>
+    props.darkMode
+      ? theme.COLOR.LIGHT.WHITE
+      : theme.COLOR.DARK.BLACK} !important;
   border: 0.1px ${theme.COLOR.LIGHT.WHITE} solid !important;
 `;
 

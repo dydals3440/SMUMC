@@ -4,15 +4,17 @@ import * as S from './Footer.style';
 
 import { FOOTER_INFOS, SOCIAL_INFOS } from '../../../constants/info';
 import { NAME } from '../../../constants/developer';
+import { useSelector } from 'react-redux';
 
 const Footer = () => {
+  const darkMode = useSelector(state => state.darkMode);
   return (
-    <S.FooterWrapper>
-      <S.InfoBox>
+    <S.FooterWrapper darkMode={darkMode}>
+      <S.InfoBox darkMode={darkMode}>
         {FOOTER_INFOS.map(({ icon, text }, i) => {
           return (
             <S.DetailInfo key={i}>
-              <S.Icon component={icon} inheritViewBox />
+              <S.Icon darkMode={darkMode} component={icon} inheritViewBox />
               <p>{text}</p>
             </S.DetailInfo>
           );
@@ -22,13 +24,13 @@ const Footer = () => {
         {SOCIAL_INFOS.map(({ url, icon }) => {
           return (
             <Link to={url} target='_blank' rel='noopener noreferrer'>
-              <S.Icon component={icon} inheritViewBox />
+              <S.Icon darkMode={darkMode} component={icon} inheritViewBox />
             </Link>
           );
         })}
       </S.LinkBox>
-      <S.CreatorNameContainer>
-        <S.CreatorName>Develop By</S.CreatorName>
+      <S.CreatorNameContainer darkMode={darkMode}>
+        <S.CreatorName darkMode={darkMode}>Develop By</S.CreatorName>
         {NAME.map(({ name, id }) => (
           <p key={id}>{name}</p>
         ))}
