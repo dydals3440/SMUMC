@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from 'react-redux';
-import SvgIcon from '@mui/material/SvgIcon';
 import MenuIcon from '@mui/icons-material/Menu';
 import * as S from './Navbar.style';
 import { sidebarOpen } from '../../../redux/slices/sidebarSlice';
@@ -35,7 +34,7 @@ const Navbar = () => {
         {darkMode ? (
           <S.DarkModeButton onClick={handleDarkmode} />
         ) : (
-          <S.WhiteModeButton onClick={handleDarkmode} />
+          <S.LightModeButton onClick={handleDarkmode} />
         )}
         <S.LinkMenu darkMode={darkMode} to={BROWSER_PATH.PROJECTS.BASE}>
           PROJECTS
@@ -57,7 +56,7 @@ const Navbar = () => {
         {darkMode ? (
           <S.DarkModeButton onClick={handleDarkmode} />
         ) : (
-          <S.WhiteModeButton onClick={handleDarkmode} />
+          <S.LightModeButton onClick={handleDarkmode} />
         )}
         <S.BurgerButton
           darkMode={darkMode}

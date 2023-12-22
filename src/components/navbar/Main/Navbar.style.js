@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import theme from '../../../theme';
-import { FONT_SIZE, FONT_WEIGHT } from '../../../constants/size';
+import { FONT_SIZE } from '../../../constants/size';
 import { Link, NavLink } from 'react-router-dom';
 import { FONT } from '../../../constants/font';
 import { MdDarkMode, MdOutlineDarkMode } from 'react-icons/md';
@@ -88,7 +88,7 @@ const DarkModeButton = styled(MdDarkMode)`
   }
 `;
 
-const WhiteModeButton = styled(MdOutlineDarkMode)`
+const LightModeButton = styled(MdOutlineDarkMode)`
   color: ${theme.COLOR.DARK.BLACK};
   cursor: pointer;
 
@@ -106,5 +106,5 @@ export {
   BurgerMenuWrapper,
   BurgerButton,
   DarkModeButton,
-  WhiteModeButton
+  LightModeButton
 };
