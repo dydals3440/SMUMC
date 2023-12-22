@@ -4,12 +4,14 @@ import theme from '../../../theme';
 
 const CardWrapper = styled.div`
   border: 1px solid #fff;
-  background: black;
+  background: ${props =>
+    props.darkMode ? theme.COLOR.DARK.BLACK : theme.COLOR.LIGHT.WHITE_GRAY};
   border-radius: 8px;
   overflow: hidden;
 
   height: 500px;
-  color: #fff;
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   cursor: pointer;
 `;
 
@@ -63,7 +65,8 @@ const MemberWrapper = styled.div`
 `;
 
 const Member = styled.div`
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   font-size: ${FONT_SIZE.XS};
   border-radius: 5px;
   border: 1px solid ${theme.COLOR.LIGHT.YELLOW};

@@ -6,14 +6,19 @@ const IntroduceBox = styled.div`
   width: 100vw;
   height: 100%;
 
-  background-color: ${theme.COLOR.DARK.BLACK};
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.BLACK : theme.COLOR.LIGHT.WHITE};
   color: ${theme.COLOR.LIGHT.WHITE_GRAY};
 
   h1 {
+    color: ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
     margin-top: 100px;
   }
 
   p {
+    color: ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
     margin-bottom: 20px;
   }
 
@@ -23,5 +28,7 @@ const IntroduceBox = styled.div`
       text-align: center;
     }
   }
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 `;
 export { IntroduceBox };

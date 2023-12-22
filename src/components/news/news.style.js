@@ -9,12 +9,16 @@ const Container = styled.div`
 const ContentBox = styled.div`
   ${theme.ALIGN.ROW_CENTER};
   gap: 50px;
-  background-color: ${theme.COLOR.DARK.BLACK};
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.BLACK : theme.COLOR.LIGHT.WHITE};
   width: 100%;
 
   @media (max-width: ${parseInt(RESPONSIVE_SIZE.PC) + 100}px) {
     ${theme.ALIGN.COLUMN_CENTER};
   }
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 `;
 
 const Contents = styled.div`
@@ -23,17 +27,23 @@ const Contents = styled.div`
   width: 500px;
   height: 650px;
   border-radius: 30px;
-  background-color: ${theme.COLOR.DARK.GRAY};
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.GRAY : theme.COLOR.LIGHT.WHITE_GRAY};
 
   h2 {
+    color: ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE_GRAY : theme.COLOR.DARK.BLACK};
     font-size: ${FONT_SIZE.FOUR_XL};
-    border-bottom: 1px solid ${theme.COLOR.LIGHT.WHITE_GRAY};
+    border-bottom: 1px solid
+      ${props =>
+        props.darkMode ? theme.COLOR.LIGHT.WHITE_GRAY : theme.COLOR.DARK.BLACK};
     margin: 15px 0;
   }
 
   h3 {
-    color: ${theme.COLOR.LIGHT.WHITE_GRAY};
     font-size: ${FONT_SIZE.SM};
+    color: ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE_GRAY : theme.COLOR.DARK.BLACK};
   }
 
   @media (max-width: ${parseInt(RESPONSIVE_SIZE.PC) + 100}px) {

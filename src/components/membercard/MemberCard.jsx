@@ -1,7 +1,10 @@
 import * as S from '../membercard/MemberCard.style';
 import { FONT_SIZE, FONT_WEIGHT } from '../../constants/size';
+import { useSelector } from 'react-redux';
 
 const MemberCard = ({ size, imgurl, name, th, department, badge, onClick }) => {
+  const darkMode = useSelector(state => state.darkMode);
+
   const sizeHandler = size => {
     switch (size) {
       case 'l':
@@ -46,6 +49,7 @@ const MemberCard = ({ size, imgurl, name, th, department, badge, onClick }) => {
 
   return (
     <S.Container
+      darkMode={darkMode}
       height={height}
       width={width}
       fontweight={fontweight}

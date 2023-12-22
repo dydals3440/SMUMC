@@ -35,7 +35,8 @@ const PartNav = styled.div`
   margin-bottom: 10px;
 
   button {
-    color: ${theme.COLOR.LIGHT.WHITE};
+    color: ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
     font-family: ${FONT.IBM_PLEX_SANS_KR.SEMI_BOLD};
     font-size: ${FONT_SIZE.XL};
     background: none;
@@ -56,8 +57,10 @@ const PartNav = styled.div`
 const PartContents = styled.div`
   ${theme.ALIGN.COLUMN_CENTER};
 
-  background-color: #232731;
-  color: white;
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.NAVY : theme.COLOR.LIGHT.WHITE_GRAY};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   padding: 50px;
 
   width: 100%;

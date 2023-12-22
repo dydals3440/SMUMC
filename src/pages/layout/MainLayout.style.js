@@ -7,8 +7,12 @@ const Wrapper = styled.div`
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: ${theme.COLOR.DARK.NAVY};
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.NAVY : theme.COLOR.LIGHT.WHITE};
   height: 100vdh;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 `;
 
 const ContentWrapper = styled.div`

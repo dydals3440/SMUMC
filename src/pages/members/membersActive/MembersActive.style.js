@@ -24,7 +24,9 @@ const Line = styled.hr`
   display: flex;
   width: 90%;
   padding: 0 20px;
-  border: 1px solid ${theme.COLOR.LIGHT.WHITE_GRAY};
+  border: 1px solid
+    ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE_GRAY : theme.COLOR.DARK.BLACK};
 `;
 
 const MemberContainer = styled.div`
