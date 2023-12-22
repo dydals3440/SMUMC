@@ -8,7 +8,7 @@ import {
   clickMemberAll
 } from '../../redux/slices/memberTabSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import drawSnow from '../../hooks/drawSnow';
+import { drawWhiteSnow, drawBlueSnow } from '../../hooks/drawSnow';
 import Confetti from 'react-confetti';
 
 const MembersLayout = () => {
@@ -28,7 +28,7 @@ const MembersLayout = () => {
         width={width}
         height={height}
         opacity={0.6}
-        drawShape={drawSnow}
+        drawShape={darkMode ? drawWhiteSnow : drawBlueSnow}
         tweenDuration={8000}
         numberOfPieces={200}
         gravity={0.05}

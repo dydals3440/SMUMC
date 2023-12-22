@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import Confetti from 'react-confetti';
 
 import * as S from './MainLayout.style';
-import drawSnow from '../../hooks/drawSnow';
+import { drawWhiteSnow, drawBlueSnow } from '../../hooks/drawSnow';
 
 const MainLayout = () => {
   const { isOpen } = useSelector(state => state.sidebar);
@@ -23,7 +23,7 @@ const MainLayout = () => {
         width={width}
         height={height}
         opacity={0.6}
-        drawShape={drawSnow}
+        drawShape={darkMode ? drawWhiteSnow : drawBlueSnow}
         tweenDuration={8000}
         numberOfPieces={200}
         gravity={0.05}
