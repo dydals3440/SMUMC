@@ -30,17 +30,18 @@ const RowContainer = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
 
   h3 {
     display: flex;
-    color: ${theme.COLOR.LIGHT.WHITE};
     font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
     font-size: ${FONT_SIZE.XL};
   }
 
   h5 {
     display: flex;
-    color: ${theme.COLOR.LIGHT.WHITE};
+
     font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
     font-size: ${FONT_SIZE.XL};
   }
@@ -52,7 +53,8 @@ const ColumnContainer = styled.div`
   gap: 20px;
   h5 {
     display: flex;
-    color: ${theme.COLOR.LIGHT.WHITE};
+    color: ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
     font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
     font-size: ${FONT_SIZE.XL};
   }
@@ -75,7 +77,8 @@ const MemberProjectContainer = styled.div``;
 
 const PartText = styled.p`
   display: flex;
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   font-family: ${FONT.IBM_PLEX_SANS_KR.REGULAR};
 `;
 

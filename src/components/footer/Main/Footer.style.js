@@ -11,7 +11,8 @@ const FooterWrapper = styled.footer`
   padding: 0 80px;
 
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
-  background-color: ${theme.COLOR.DARK.GRAY};
+  background-color: ${props =>
+    props.darkMode ? theme.COLOR.DARK.GRAY : theme.COLOR.LIGHT.WHITE_GRAY};
 
   ${theme.ALIGN.ROW_CENTER};
   justify-content: space-between;
@@ -26,11 +27,15 @@ const FooterWrapper = styled.footer`
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     ${theme.ALIGN.COLUMN_CENTER};
   }
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 `;
 
 const InfoBox = styled.ul`
   list-style: none;
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   font-size: 1rem;
   padding: 0;
 
@@ -49,7 +54,8 @@ const DetailInfo = styled.li`
 `;
 
 const Icon = styled(SvgIcon)`
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
 `;
 
 const SocialBox = styled.div``;
@@ -68,7 +74,8 @@ const LinkBox = styled.div`
 `;
 
 const CreatorName = styled.p`
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
   font-size: ${FONT_SIZE.XS};
 
@@ -84,6 +91,8 @@ const CreatorNameContainer = styled.div`
   align-items: center;
   font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};
   font-size: ${FONT_SIZE.XS};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
 
   @media (max-width: ${RESPONSIVE_SIZE.MOBILE}) {
     font-family: ${FONT.IBM_PLEX_SANS_KR.THIN};

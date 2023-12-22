@@ -3,6 +3,8 @@ import theme from '../../../theme';
 import { FONT_SIZE, FONT_WEIGHT } from '../../../constants/size';
 import { Link, NavLink } from 'react-router-dom';
 import { FONT } from '../../../constants/font';
+import { MdDarkMode, MdOutlineDarkMode } from 'react-icons/md';
+import SvgIcon from '@mui/material/SvgIcon';
 
 const NavWrapper = styled.nav`
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
@@ -19,7 +21,11 @@ const NavWrapper = styled.nav`
   justify-content: space-between;
 
   background-color: ${props =>
-    props.isShow ? theme.COLOR.DARK.GRAY : theme.COLOR.TRANSPARENT};
+    props.isShow
+      ? props.darkMode
+        ? theme.COLOR.DARK.GRAY
+        : theme.COLOR.LIGHT.WHITE
+      : theme.COLOR.TRANSPARENT};
 
   color: ${theme.COLOR.LIGHT.WHITE_GRAY};
   font-size: ${FONT_SIZE.FOUR_XL};
@@ -30,7 +36,8 @@ const NavWrapper = styled.nav`
 
 const LinkHome = styled(Link)`
   text-decoration: none;
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   font-size: ${FONT_SIZE.THREE_XL};
 `;
 
@@ -45,7 +52,8 @@ const NavMenuWrapper = styled.div`
 
 const LinkMenu = styled(NavLink)`
   text-decoration: none;
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   font-size: ${FONT_SIZE.XL};
 
   &.active {
@@ -67,4 +75,36 @@ const BurgerMenuWrapper = styled.div`
   }
 `;
 
-export { NavWrapper, LinkHome, NavMenuWrapper, LinkMenu, BurgerMenuWrapper };
+const BurgerButton = styled(SvgIcon)`
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
+`;
+
+const DarkModeButton = styled(MdDarkMode)`
+  cursor: pointer;
+  @media ${theme.WINDOW_SIZE.MOBILE} {
+    margin-right: 10px;
+    font-size: ${FONT_SIZE.TWO_XL};
+  }
+`;
+
+const WhiteModeButton = styled(MdOutlineDarkMode)`
+  color: ${theme.COLOR.DARK.BLACK};
+  cursor: pointer;
+
+  @media ${theme.WINDOW_SIZE.MOBILE} {
+    margin-right: 10px;
+    font-size: ${FONT_SIZE.TWO_XL};
+  }
+`;
+
+export {
+  NavWrapper,
+  LinkHome,
+  NavMenuWrapper,
+  LinkMenu,
+  BurgerMenuWrapper,
+  BurgerButton,
+  DarkModeButton,
+  WhiteModeButton
+};

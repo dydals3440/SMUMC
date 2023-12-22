@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import MenuItem from '@mui/material/MenuItem';
 
@@ -15,6 +16,7 @@ const MembersAll = () => {
   const [page, setPage] = useState(1);
   const navigate = useNavigate();
   const membersPerPage = 10;
+  const darkMode = useSelector(state => state.darkMode);
 
   const handlePageChange = (event, value) => {
     setPage(value);
@@ -35,10 +37,10 @@ const MembersAll = () => {
     <S.Container>
       <S.FormControlStyle>
         <S.SelectStyle
+          darkMode={darkMode}
           labelId='member-year-select-label'
           id='member-year-select'
           value={year}
-          label='year'
           onChange={handleChange}
         >
           <MenuItem value={0}>전체</MenuItem>

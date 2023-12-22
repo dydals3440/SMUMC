@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import * as S from './MembersDetail.style';
 import Button from '../../../components/button/Button';
@@ -12,23 +13,26 @@ const MembersDetail = () => {
   const [userData, setUserData] = useState({});
   const { id } = useParams();
   const { name, year, part, github, sex, skill } = userData;
+  const darkMode = useSelector(state => state.darkMode);
 
   useEffect(() => {
     const user = MEMBERS.find(members => members.id === parseInt(id));
     setUserData(user || {});
   }, []);
 
-  const githubStyle = useMemo(() => ({ color: 'white' }), []);
+  const githubStyle = {
+    color: darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK
+  };
 
   return (
     <S.Container>
-      <S.RowContainer>
-        <S.PartText>구성원</S.PartText>
-        <S.PartText>{'>'}</S.PartText>
+      <S.RowContainer darkMode={darkMode}>
+        <S.PartText darkMode={darkMode}>구성원</S.PartText>
+        <S.PartText darkMode={darkMode}>{'>'}</S.PartText>
         <h3>{name}</h3>
       </S.RowContainer>
-      <S.ColumnContainer>
-        <S.RowContainer>
+      <S.ColumnContainer darkMode={darkMode}>
+        <S.RowContainer darkMode={darkMode}>
           <h3>{name}</h3>
           <h3>|</h3>
           <h5>{year}기</h5>
@@ -54,7 +58,7 @@ const MembersDetail = () => {
         {github && (
           <S.GitChartImg
             username={github}
-            colorScheme='light'
+            colorScheme={darkMode ? 'light' : 'dark'}
             year='last'
             style={githubStyle}
           />

@@ -6,13 +6,12 @@ import { FONT_SIZE, RESPONSIVE_SIZE } from '../../constants/size';
 const Wrapper = styled.div`
   ${theme.ALIGN.COLUMN_CENTER}
 
-  background: ${theme.COLOR.DARK.NAVY};
-
   h1 {
     margin-top: 200px;
     font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
     font-size: ${FONT_SIZE.FIVE_XL};
-    color: ${theme.COLOR.LIGHT.WHITE};
+    color: ${props =>
+      props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
     text-align: center;
     padding: 20px;
   }
@@ -31,7 +30,8 @@ const Wrapper = styled.div`
 const CalendarText = styled.p`
   font-family: ${FONT.IBM_PLEX_SANS_KR.BOLD};
   font-size: ${FONT_SIZE.FIVE_XL};
-  color: ${theme.COLOR.LIGHT.WHITE};
+  color: ${props =>
+    props.darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK};
   width: 80%;
   text-align: center;
   margin: 20px;

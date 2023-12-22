@@ -10,14 +10,16 @@ import {
 } from '../../components';
 
 import { MEMBERS } from '../../constants/members.js';
+import { useSelector } from 'react-redux';
 
 const Home = () => {
   const allMemberCount = MEMBERS.length;
   const currentMember = MEMBERS.filter(m => m.year === 5);
   const currentMemberCount = currentMember.length;
+  const darkMode = useSelector(state => state.darkMode);
 
   return (
-    <S.Container>
+    <S.Container darkMode={darkMode}>
       <HeroBox />
       <IntroduceBox>
         <h1>About us</h1>

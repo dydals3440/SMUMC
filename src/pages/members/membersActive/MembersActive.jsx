@@ -5,9 +5,11 @@ import MemberCard from '../../../components/membercard/MemberCard';
 import DEFAULT_FEMALE_IMAGE from '../../../assets/img/DEFAULT_FEMALE.webp';
 import DEFAULT_MALE_IMAGE from '../../../assets/img/DEFAULT_MALE.webp';
 import { BROWSER_PATH } from '../../../constants/path';
+import { useSelector } from 'react-redux';
 
 const MembersActive = () => {
   const navigate = useNavigate();
+  const darkMode = useSelector(state => state.darkMode);
   return (
     <S.Container>
       <S.MemberContainer>
@@ -29,7 +31,7 @@ const MembersActive = () => {
             )
         )}
       </S.MemberContainer>
-      <S.Line />
+      <S.Line darkMode={darkMode} />
       <S.ChallengerContainer>
         {MEMBERS.map(
           ({ position, name, year, part, sex, id }) =>

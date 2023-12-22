@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import * as S from './Notices.style';
 import { Calendar } from '../../components';
@@ -15,9 +16,10 @@ const Notices = () => {
     }
     setEvents(prev => [...prev, { date, title: text, color }]);
   };
+  const darkMode = useSelector(state => state.darkMode);
   return (
-    <S.Wrapper>
-      <S.CalendarText>UMC 일정안내</S.CalendarText>
+    <S.Wrapper darkMode={darkMode}>
+      <S.CalendarText darkMode={darkMode}>UMC 일정안내</S.CalendarText>
       <Calendar
         startingDate={new Date()}
         eventsArr={events}

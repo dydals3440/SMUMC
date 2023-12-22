@@ -15,9 +15,10 @@ const MainLayout = () => {
   // const width = window.innerWidth;
   // const height = document.body.scrollHeight;
   const { width, height } = useWindowSize();
+  const darkMode = useSelector(state => state.darkMode);
 
   return (
-    <S.Wrapper>
+    <S.Wrapper darkMode={darkMode}>
       <Confetti
         width={width}
         height={height}

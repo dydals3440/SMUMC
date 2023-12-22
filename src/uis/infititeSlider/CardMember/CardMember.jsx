@@ -1,9 +1,10 @@
-import imgGirl from '../../../../public/images/homecoming.webp';
+import { useSelector } from 'react-redux';
 import * as S from '../CardMember/CardMember.style';
 
 const CardMember = ({ id, img, year, description, name, member }) => {
+  const darkMode = useSelector(state => state.darkMode);
   return (
-    <S.CardWrapper key={id}>
+    <S.CardWrapper darkMode={darkMode} key={id}>
       <S.CardTop>
         <img src={img} alt={name} />
         <S.Wrapper>
@@ -17,7 +18,9 @@ const CardMember = ({ id, img, year, description, name, member }) => {
           <span>참가자</span>
           <S.MemberWrapper>
             {member.map(data => (
-              <S.Member key={id}>{data}</S.Member>
+              <S.Member darkMode={darkMode} key={id}>
+                {data}
+              </S.Member>
             ))}
           </S.MemberWrapper>
         </S.CardCategory>

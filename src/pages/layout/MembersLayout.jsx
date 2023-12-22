@@ -16,11 +16,12 @@ const MembersLayout = () => {
   const navigate = useNavigate();
   const isClicked = useSelector(state => state.memberTab.isClicked);
   const dispatch = useDispatch();
-  const height = window.innerHeight + 1600;
+  const height = window.innerHeight + 50;
   const width = window.innerWidth;
+  const darkMode = useSelector(state => state.darkMode);
 
   return (
-    <S.Wrapper>
+    <S.Wrapper darkMode={darkMode}>
       <Navbar />
       <Confetti
         wind={0.01}
@@ -41,7 +42,7 @@ const MembersLayout = () => {
           }}
           color={
             isClicked
-              ? `${theme.COLOR.LIGHT.WHITE}`
+              ? `${darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK}`
               : `${theme.COLOR.DARK.LIGHT_GRAY}`
           }
         >
@@ -56,7 +57,7 @@ const MembersLayout = () => {
           color={
             isClicked
               ? `${theme.COLOR.DARK.LIGHT_GRAY}`
-              : `${theme.COLOR.LIGHT.WHITE}`
+              : `${darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK}`
           }
         >
           Member List
