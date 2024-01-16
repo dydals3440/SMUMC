@@ -47,11 +47,16 @@ const Banner = styled.div`
 `;
 
 const Wrapper = styled.div`
-  ${theme.ALIGN.ROW_CENTER}
+  ${theme.ALIGN.COLUMN_CENTER}
   width: 100%;
   gap: 10px;
-  height: 80%;
+  height: 100%;
   margin-bottom: 20px;
+`;
+
+const ButtonWrapper = styled.div`
+  ${theme.ALIGN.ROW_CENTER};
+  gap: 20px;
 `;
 
 const ProjectWrapper = styled.div`
@@ -79,4 +84,11 @@ const PaginationStyle = styled(Pagination)`
   padding: 5px;
   border-radius: 30px;
 `;
-export { Banner, Container, Wrapper, ProjectWrapper, PaginationStyle };
+export {
+  Banner,
+  Container,
+  Wrapper,
+  ButtonWrapper,
+  ProjectWrapper,
+  PaginationStyle
+};
