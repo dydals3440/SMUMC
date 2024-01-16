@@ -38,6 +38,10 @@ const TabContainer = styled.div`
   }
 `;
 
+const OutletWrapper = styled.div`
+  flex: 1;
+`;
+
 const TabButton = styled.button`
   display: flex;
   color: ${props => props.color};
@@ -53,4 +57,4 @@ const TabButton = styled.button`
   }
 `;
 
-export { Wrapper, ImgBanner, TabContainer, TabButton };
+export { Wrapper, ImgBanner, TabContainer, TabButton, OutletWrapper };

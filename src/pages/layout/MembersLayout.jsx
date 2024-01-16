@@ -51,6 +51,7 @@ const MembersLayout = () => {
         <S.TabButton
           onClick={() => {
             dispatch(clickMemberAll());
+            console.log(isClicked);
             navigate(`${BROWSER_PATH.MEMBERS.ALL}`);
           }}
           color={
@@ -65,6 +66,7 @@ const MembersLayout = () => {
       <S.OutletWrapper>
         <Outlet />
       </S.OutletWrapper>
+
       {isOpen && <Sidebar />}
       <Footer />
     </S.Wrapper>
