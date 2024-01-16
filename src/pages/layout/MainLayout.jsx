@@ -20,13 +20,13 @@ const MainLayout = () => {
   return (
     <S.Wrapper darkMode={darkMode}>
       <Confetti
-        width={width}
-        height={height}
-        opacity={0.6}
-        drawShape={darkMode ? drawWhiteSnow : drawBlueSnow}
-        tweenDuration={8000}
-        numberOfPieces={200}
-        gravity={0.05}
+      // width={width}
+      // height={height}
+      // opacity={0.6}
+      // drawShape={darkMode ? drawWhiteSnow : drawBlueSnow}
+      // tweenDuration={8000}
+      // numberOfPieces={200}
+      // gravity={0.05}
       />
       <Navbar />
       <S.OutletWrapper>

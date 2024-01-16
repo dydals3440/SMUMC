@@ -24,14 +24,14 @@ const MembersLayout = () => {
     <S.Wrapper darkMode={darkMode}>
       <Navbar />
       <Confetti
-        wind={0.01}
-        width={width}
-        height={height}
-        opacity={0.6}
-        drawShape={darkMode ? drawWhiteSnow : drawBlueSnow}
-        tweenDuration={8000}
-        numberOfPieces={200}
-        gravity={0.05}
+      // wind={0.01}
+      // width={width}
+      // height={height}
+      // opacity={0.6}
+      // drawShape={darkMode ? drawWhiteSnow : drawBlueSnow}
+      // tweenDuration={8000}
+      // numberOfPieces={200}
+      // gravity={0.05}
       />
       <S.TabContainer>
         <S.TabButton
@@ -51,7 +51,6 @@ const MembersLayout = () => {
         <S.TabButton
           onClick={() => {
             dispatch(clickMemberAll());
-            console.log(isClicked);
             navigate(`${BROWSER_PATH.MEMBERS.ALL}`);
           }}
           color={
@@ -63,7 +62,9 @@ const MembersLayout = () => {
           Member List
         </S.TabButton>
       </S.TabContainer>
-      <Outlet />
+      <S.OutletWrapper>
+        <Outlet />
+      </S.OutletWrapper>
       {isOpen && <Sidebar />}
       <Footer />
     </S.Wrapper>
