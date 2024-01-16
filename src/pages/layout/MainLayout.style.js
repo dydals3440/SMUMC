@@ -19,4 +19,8 @@ const ContentWrapper = styled.div`
   flex: 1;
 `;
 
-export { Wrapper, ContentWrapper };
+const OutletWrapper = styled.div`
+  flex: 1;
+`;
+
+export { Wrapper, ContentWrapper, OutletWrapper };

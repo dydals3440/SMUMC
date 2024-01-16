@@ -29,7 +29,9 @@ const MainLayout = () => {
         gravity={0.05}
       />
       <Navbar />
-      <Outlet />
+      <S.OutletWrapper>
+        <Outlet />
+      </S.OutletWrapper>
       {isOpen && <Sidebar />}
       <Footer />
     </S.Wrapper>
