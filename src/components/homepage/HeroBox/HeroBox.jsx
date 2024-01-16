@@ -10,16 +10,16 @@ const HeroBox = () => {
         <h1>UNIVERSITY</h1>
         <h1>MAKEUS</h1>
         <h1>CHALLENGE</h1>
-        <p> 상명대학교 코딩 동아리</p>
+        <p>상명대학교 코딩 동아리</p>
         <S.ApplyWrapper>
           <S.Button
             onClick={() => window.open('https://forms.gle/obd8mfEppcZDP7yv5')}
+            disabled
           >
-            🎄 플젝 인원 모집 🎄
+            6기 모집 준비중
           </S.Button>
           <p>
-            {/* 2024년 초, 6기 모집 예정입니다. 자세한 일정은 NOTICES를 참고하세요. */}
-            겨울방학 동안, 함께 열심히 하실 팀원들을 모집합니다. 🎅🏻
+            2024년 초, 6기 모집 예정입니다. 자세한 일정은 NOTICES를 참고하세요.
           </p>
         </S.ApplyWrapper>
       </S.Wrapper>

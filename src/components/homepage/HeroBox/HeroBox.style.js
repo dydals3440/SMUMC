@@ -58,8 +58,8 @@ const Button = styled.button`
   border-radius: 20px;
   margin-bottom: 20px;
   font-size: ${FONT_SIZE.LG};
-  /* background-color: ${theme.COLOR.DARK.BEIGE_BROWN}; */
-  background: #34a65f;
+  background-color: ${theme.COLOR.DARK.BEIGE_BROWN};
+  /* background: #34a65f; */
   font-weight: ${FONT_WEIGHT.FONT_BLACK};
 
   color: white;
@@ -73,8 +73,8 @@ const Button = styled.button`
   }
 
   &:hover {
-    /* background-color: ${theme.COLOR.PRIMARY.BLUE}; */
-    background-color: #f5624d;
+    background-color: ${theme.COLOR.PRIMARY.BLUE};
+    /* background-color: #f5624d; */
   }
 `;
 
