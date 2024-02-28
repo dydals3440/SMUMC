@@ -21,6 +21,7 @@ const Container = styled.div`
   padding: 50px;
   width: 100%;
   height: 100%;
+  margin-bottom: 500px;
   gap: 35px;
   animation: ${fadeInUp} 0.7s ease-in-out;
 `;

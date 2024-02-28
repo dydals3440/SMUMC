@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 
   transition-timing-function: ease-in;
   transition: all 0.5s;
+  min-height: 100vh;
 `;
 
 const ImgBanner = styled.img`
@@ -39,7 +40,7 @@ const TabContainer = styled.div`
 `;
 
 const OutletWrapper = styled.div`
-  flex: 1;
+  margin-top: auto;
 `;
 
 const TabButton = styled.button`
@@ -57,4 +58,15 @@ const TabButton = styled.button`
   }
 `;
 
-export { Wrapper, ImgBanner, TabContainer, TabButton, OutletWrapper };
+const ContentsContainer = styled.div`
+  flex: 1;
+`;
+
+export {
+  Wrapper,
+  ImgBanner,
+  TabContainer,
+  TabButton,
+  OutletWrapper,
+  ContentsContainer
+};

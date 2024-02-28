@@ -33,39 +33,41 @@ const MembersLayout = () => {
       // numberOfPieces={200}
       // gravity={0.05}
       />
-      <S.TabContainer>
-        <S.TabButton
-          onClick={() => {
-            dispatch(clickMemberActive());
-            console.log(isClicked);
-            navigate(`${BROWSER_PATH.MEMBERS.ACTIVE}`);
-          }}
-          color={
-            isClicked
-              ? `${darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK}`
-              : `${theme.COLOR.DARK.LIGHT_GRAY}`
-          }
-        >
-          Active Member
-        </S.TabButton>
-        <S.TabButton
-          onClick={() => {
-            dispatch(clickMemberAll());
-            console.log(isClicked);
-            navigate(`${BROWSER_PATH.MEMBERS.ALL}`);
-          }}
-          color={
-            isClicked
-              ? `${theme.COLOR.DARK.LIGHT_GRAY}`
-              : `${darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK}`
-          }
-        >
-          Member List
-        </S.TabButton>
-      </S.TabContainer>
-      <S.OutletWrapper>
-        <Outlet />
-      </S.OutletWrapper>
+      <S.ContentsContainer>
+        <S.TabContainer>
+          <S.TabButton
+            onClick={() => {
+              dispatch(clickMemberActive());
+              console.log(isClicked);
+              navigate(`${BROWSER_PATH.MEMBERS.ACTIVE}`);
+            }}
+            color={
+              isClicked
+                ? `${darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK}`
+                : `${theme.COLOR.DARK.LIGHT_GRAY}`
+            }
+          >
+            Active Member
+          </S.TabButton>
+          <S.TabButton
+            onClick={() => {
+              dispatch(clickMemberAll());
+              console.log(isClicked);
+              navigate(`${BROWSER_PATH.MEMBERS.ALL}`);
+            }}
+            color={
+              isClicked
+                ? `${theme.COLOR.DARK.LIGHT_GRAY}`
+                : `${darkMode ? theme.COLOR.LIGHT.WHITE : theme.COLOR.DARK.BLACK}`
+            }
+          >
+            Member List
+          </S.TabButton>
+        </S.TabContainer>
+        <S.OutletWrapper>
+          <Outlet />
+        </S.OutletWrapper>
+      </S.ContentsContainer>
 
       {isOpen && <Sidebar />}
       <Footer />

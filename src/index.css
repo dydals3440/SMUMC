@@ -6,14 +6,22 @@
 
 html {
   width: 100%;
-  body: 100%;
   overflow-x: hidden;
 }
 
 body {
+  height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+}
+
+.react-activity-calendar.styles-module_container__GBNxC {
+  @media (max-width: 768px) {
+    width: 500px;
+  }
+  @media (max-width: 600px) {
+    width: 300px;
+  }
 }
 
 @font-face {

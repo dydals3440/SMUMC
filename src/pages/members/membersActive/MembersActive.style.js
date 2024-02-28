@@ -14,6 +14,7 @@ const fadeInUp = keyframes`
 
 const Container = styled.div`
   ${theme.ALIGN.COLUMN_CENTER};
+  flex: 1;
   position: relative;
   gap: 100px;
   padding: 50px 0;
