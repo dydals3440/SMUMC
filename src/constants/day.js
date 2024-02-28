@@ -30,7 +30,7 @@ const MOCK_EVENTS = [
   { date: new Date(2023, 11, 20), title: '개발자 3차 매칭 지원 기간' },
   { date: new Date(2023, 11, 21), title: '개발자 3차 매칭 지원 기간' },
   { date: new Date(2023, 11, 22), title: '개발자 3차 매칭 결과 발표' },
-  { date: new Date(2023, 11, 23), title: '지부 내 개발자 랜덤 매칭' }
+  { date: new Date(2024, 3, 3), title: '개학!' }
 ];
 
 export { DAYS, MONTHS, MOCK_EVENTS };
