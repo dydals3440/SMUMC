@@ -23,7 +23,7 @@ const Home = () => {
       <HeroBox />
       <IntroduceBox>
         <h1>About us</h1>
-        <p>University MakeUs Challendge(UMC-SMU)는</p>
+        <p>University MakeUs Challenge(UMC-SMU)는</p>
         <p>앱&웹 서비스 런칭에 도전하는 대학생 IT 연합동아리입니다</p>
         <S.Wrapper>
           <CountUpCard

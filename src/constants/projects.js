@@ -27,7 +27,7 @@ const PROJECTS = [
       '해누/김현우'
     ],
     stack: ['Swift', 'Spring'],
-    img: '/3year/다마고치/다마고치.png',
+    img: '/3year/Waither/Waither.png',
     release: 'https://www.makeus.in/e046ab3f-95f2-4210-913b-fae4a4251e53'
   },
   {
@@ -39,7 +39,7 @@ const PROJECTS = [
     year: 3,
     member: ['조예빈/예콩', '솔솔/이한솔'],
     stack: ['Swift', 'Spring'],
-    img: '/3year/Waither/Waither.png',
+    img: '/3year/다마고치/다마고치.png',
     release: 'https://www.makeus.in/cfe1c32d-89df-43b1-a136-843c3943dbb0'
   },
   {
@@ -110,7 +110,7 @@ const PROJECTS = [
     theme: ['IOS', 'SPRING'],
     github: null,
     year: 4,
-    member: ['니니/김유빈', '위즈덤/정슬기', '피딕/황인성'],
+    member: ['니니/김유빈', '피딕/황인성', '세헌/호세헌', '해누/김현우'],
     stack: ['SWIFT', 'SPRING'],
     img: '/4year/바른이/바른이.png',
     release: 'https://www.makeus.in/4d141c41-5f49-4dc6-8b49-b0c7144ca79a'
