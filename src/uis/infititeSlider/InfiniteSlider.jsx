@@ -49,16 +49,18 @@ const InfiniteSlider = () => {
   return (
     <S.Wrapper>
       <Slider {...settings}>
-        {PROJECTS.map(({ id, img, year, description, name, member }) => (
-          <CardMember
-            id={id}
-            img={img}
-            year={year}
-            description={description}
-            name={name}
-            member={member}
-          />
-        ))}
+        {PROJECTS.reverse().map(
+          ({ id, img, year, description, name, member }) => (
+            <CardMember
+              id={id}
+              img={img}
+              year={year}
+              description={description}
+              name={name}
+              member={member}
+            />
+          )
+        )}
       </Slider>
     </S.Wrapper>
   );
