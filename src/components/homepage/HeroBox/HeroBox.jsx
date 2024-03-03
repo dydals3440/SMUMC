@@ -13,11 +13,7 @@ const HeroBox = () => {
         <p>상명대학교 코딩 동아리</p>
         <S.ApplyWrapper>
           <S.Button
-            onClick={() =>
-              window.open(
-                'https://docs.google.com/forms/d/19kkFUMwAMybZmogP8zByECEKuI9eL4CQ82ee1okTWzc/'
-              )
-            }
+            onClick={() => window.open('https://forms.gle/Q59uy3BT63XMAYjG9')}
           >
             6기 지원하기🔥
           </S.Button>
