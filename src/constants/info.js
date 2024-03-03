@@ -23,9 +23,8 @@ const NEWS_INFOS = [
   },
   {
     id: 2,
-    title: '5th UMC iOS Conference',
-    description:
-      'iOS를 같이 공부하고 있는 사람들의 이야기도 들으며 행사에 참여한 다른 챌린저들과 의미 있는 시간을 가져볼 수 있으면 좋겠습니다.',
+    title: '6th UMC 신규 챌린저 모집',
+    description: 'IT 연합 사이드 프로젝트 동아리 UMC 상명대 6기 챌린저 모집',
     image: '/images/conference.webp'
   }
 ];
