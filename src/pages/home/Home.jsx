@@ -36,13 +36,13 @@ const Home = () => {
             endNum={currentMemberCount}
             lastUnit='명'
           />
-          <CountUpCard title='현재 기수' endNum='5' lastUnit='기' />
+          <CountUpCard title='현재 기수' endNum='6' lastUnit='기' />
         </S.Wrapper>
       </IntroduceBox>
 
       <IntroduceBox>
         <h1>총 6개의 파트로 구성</h1>
-        <p>2023년 하반기 기준</p>
+        <p>2024년 상반기 기준</p>
         <PartIntro />
       </IntroduceBox>
 
