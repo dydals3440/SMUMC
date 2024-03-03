@@ -13,14 +13,15 @@ const HeroBox = () => {
         <p>상명대학교 코딩 동아리</p>
         <S.ApplyWrapper>
           <S.Button
-            onClick={() => window.open('https://forms.gle/obd8mfEppcZDP7yv5')}
-            disabled
+            onClick={() =>
+              window.open(
+                'https://docs.google.com/forms/d/19kkFUMwAMybZmogP8zByECEKuI9eL4CQ82ee1okTWzc/'
+              )
+            }
           >
-            6기 모집 준비중
+            6기 지원하기🔥
           </S.Button>
-          <p>
-            2024년 초, 6기 모집 예정입니다. 자세한 일정은 NOTICES를 참고하세요.
-          </p>
+          <p>현재, UMC 6기 지원을 시작하였습니다. 많은 지원 부탁드립니다!</p>
         </S.ApplyWrapper>
       </S.Wrapper>
     </S.Hero>
