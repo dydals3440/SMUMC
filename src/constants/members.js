@@ -1351,7 +1351,7 @@ const MEMBERS = [
     part: 'WEB',
     position: '챌린저',
     github: '201910825',
-    sex: 'w',
+    sex: 'm',
     project: null,
     skill: ['HTML', 'CSS', 'JS', 'React']
   },

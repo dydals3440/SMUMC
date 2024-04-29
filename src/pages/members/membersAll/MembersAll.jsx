@@ -48,6 +48,7 @@ const MembersAll = () => {
           <MenuItem value={3}>3기</MenuItem>
           <MenuItem value={4}>4기</MenuItem>
           <MenuItem value={5}>5기</MenuItem>
+          <MenuItem value={6}>6기</MenuItem>
         </S.SelectStyle>
       </S.FormControlStyle>
       <S.MemberContainer>
