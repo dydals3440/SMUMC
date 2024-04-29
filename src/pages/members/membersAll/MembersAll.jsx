@@ -12,7 +12,7 @@ import DEFAULT_FEMALE_IMAGE from '../../../assets/img/DEFAULT_FEMALE.webp';
 import DEFAULT_MALE_IMAGE from '../../../assets/img/DEFAULT_MALE.webp';
 
 const MembersAll = () => {
-  const [year, setYear] = useState(0);
+  const [year, setYear] = useState(6);
   const [page, setPage] = useState(1);
   const navigate = useNavigate();
   const membersPerPage = 10;
