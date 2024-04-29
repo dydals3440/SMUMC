@@ -14,7 +14,7 @@ import { useSelector } from 'react-redux';
 
 const Home = () => {
   const allMemberCount = MEMBERS.length;
-  const currentMember = MEMBERS.filter(m => m.year === 5);
+  const currentMember = MEMBERS.filter(m => m.year === 6);
   const currentMemberCount = currentMember.length;
   const darkMode = useSelector(state => state.darkMode);
 
