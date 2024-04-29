@@ -16,7 +16,7 @@ const MembersActive = () => {
         {MEMBERS.map(
           ({ id, name, position, year, part, sex }) =>
             position !== '챌린저' &&
-            year === 5 && (
+            year === 6 && (
               <MemberCard
                 size='m'
                 name={name}
