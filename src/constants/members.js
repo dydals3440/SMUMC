@@ -2023,7 +2023,7 @@ const MEMBERS = [
     part: 'PM',
     position: '챌린저',
     github: null,
-    sex: 'm',
+    sex: 'w',
     project: null,
     skill: ['Figma']
   },
@@ -2107,7 +2107,7 @@ const MEMBERS = [
     part: 'SPRING',
     position: '챌린저',
     github: 'alslalsl3125',
-    sex: 'w',
+    sex: 'm',
     project: null,
     skill: ['Java', 'Spring']
   },

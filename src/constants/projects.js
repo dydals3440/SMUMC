@@ -75,7 +75,7 @@ const PROJECTS = [
     year: 3,
     member: ['무너/문정호', '레이/윤채영', '민팍/박민희'],
     stack: ['Swift', 'Spring'],
-    img: '',
+    img: '/3year/담소/담소.jpg',
     release: ''
   },
   {
