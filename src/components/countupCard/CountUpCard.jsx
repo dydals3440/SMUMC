@@ -4,7 +4,7 @@ import * as S from './CountUpCard.style';
 function counter(setCount, start, end) {
   let now = start;
   const handle = setInterval(() => {
-    setCount(Math.ceil(now));
+    setCount(Math.round(now));
     if (now >= end) {
       clearInterval(handle);
     }
@@ -18,7 +18,7 @@ const CountUpCard = ({ title, endNum, startNum = 0, firstUnit, lastUnit }) => {
 
   useEffect(() => {
     counter(setCount, startNum, endNum);
-  }, [startNum, endNum]);
+  }, [startNum]);
 
   return (
     <S.Container>
